@@ -1,0 +1,9 @@
+.container {
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.144px;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
