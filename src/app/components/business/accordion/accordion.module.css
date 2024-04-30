@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  background-color: theme('colors.grey.50');
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: rebeccapurple;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      padding: 8px;
+    }
+    
+    .open-btn {
+      background-color: theme('colors.white');
+    }
+
+    .close-btn {
+      background-color: theme('colors.green.1');
+    }
+  }
+
+  .body {
+    background-color: theme('colors.green.2');
+    padding: 12px;
+
+    @media (min-width: 1300px) {
+      padding: 40px;
+    }
+  }
+}
+
+.opened {
+  background-color: theme('colors.green.1');
+}
