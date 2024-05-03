@@ -1,0 +1,132 @@
+{
+  "title": {
+    "first-line": "Business",
+    "second-line": "검역통관"
+  },
+  "explain": "검역통관사업부에 오신 것을 환영합니다\n본사업부는 크게 두가지 업무로 분류 됩니다",
+  "body": {
+    "section-1": {
+      "part-1": {
+        "title": "01 검역업무",
+        "description": "수입품에 대한 국내 법규를 사전 검토하여 고객사가 안전하게 물품을 수입할 수 있도록 법규검토(한글표기사항 포함) 및 대안을 제안합니다."
+      },
+      "part-2": {
+        "title": "02 통관업무",
+        "description": "고객사를 대신하여, 수입과정에서 발생되는 국내 유관계기관의 업무를 대행하여 신속하게 수입절차를 완료하여 고객사의 시간을 단축시킵니다.\n또한, 수입과정에서 발생가능한 잠재적 위험성을 사전에 발견하여 고객사의 경제적 손실을 예방하는 업무를 맡고 있습니다."
+      }
+    },
+    "section-2": {
+      "title": "한눈에 보기",
+      "description": {
+        "part-1": {
+          "title": "수입서류 검토국가",
+          "highlight": "80",
+          "highlight-suffix": "개국"
+        },
+        "part-2": {
+          "title": "한글표기 작업(라벨링)",
+          "highlight": "4,500",
+          "highlight-suffix": "건수"
+        },
+        "part-3": {
+          "title": "B/L 신고 건수",
+          "highlight": "5,500",
+          "highlight-suffix": "건"
+        },
+        "part-4": {
+          "title": "검역신고건수",
+          "highlight": "8,000",
+          "highlight-suffix": "건"
+        }
+      }
+    },
+    "section-3": {
+      "title": "사업 분야",
+      "description": {
+        "part-1": {
+          "title": "식품",
+          "description": {
+            "1" : {
+              "first-line": "가공 식품",
+              "second-line": "(유가공 포함)"
+            },
+            "2" : {
+              "first-line": "축산 · 농산 · 수산품",
+              "second-line": "(냉장, 냉동)"
+            },
+            "3" : {
+              "first-line": "신선식품",
+              "second-line": ""
+            },
+            "4" : {
+              "first-line": "식품 원재료",
+              "second-line": "(곡물, 밀가루, 커피 등)"
+            },
+            "5" : {
+              "first-line": "보수 작업",
+              "second-line": "(선별/라벨링)"
+            }
+          }
+        },
+        "part-2": {
+          "title": "바이오",
+          "description": {
+            "1" : {
+              "first-line": "레드바이오",
+              "second-line": "의료, 제약 원재료"
+            },
+            "2" : {
+              "first-line": "건강기능품 원료",
+              "second-line": ""
+            },
+            "3" : {
+              "first-line": "바이오, 의료 기기",
+              "second-line": ""
+            },
+            "4" : {
+              "first-line": "그린바이오",
+              "second-line": "친환경 비료, 미생물, 종자, 묘목"
+            },
+            "5" : {
+              "first-line": "화이트바이오",
+              "second-line": "특수화학 소재 자재 및 연료"
+            },
+            "6" : {
+              "first-line": "보수 작업",
+              "second-line": "(선별/라벨링)"
+            }
+          }
+        },
+        "part-3": {
+          "title": "공산품 및 기타",
+          "description": {
+            "1" : {
+              "first-line": "배터리",
+              "second-line": ""
+            },
+            "2" : {
+              "first-line": "화장품",
+              "second-line": ""
+            },
+            "3" : {
+              "first-line": "완성가구 및 자재",
+              "second-line": ""
+            },
+            "4" : {
+              "first-line": "철강산업재",
+              "second-line": ""
+            },
+            "5" : {
+              "first-line": "보수 작업",
+              "second-line": "(선별/라벨링)"
+            }
+          }
+        }
+      }
+    }
+  },
+  "footer": {
+    "title": "부림무역이 궁금하시다면?\n지금 문의해보세요.",
+    "button-text": "자세히 보러가기"
+  }
+}

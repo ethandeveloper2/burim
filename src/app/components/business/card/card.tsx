@@ -1,7 +1,16 @@
 import styles from './card.module.css';
 import Bold from '@Components/common/typo/bold/bold';
+import Medium from '@Components/common/typo/medium/medium';
 
-const BusinessCard = () => {
+const BusinessCard = ({
+  title,
+  highlight,
+  highlightSuffix,
+} : {
+  title: string;
+  highlight: string;
+  highlightSuffix: string;
+}) => {
   return (
     <div
       className={styles.container}
@@ -11,21 +20,22 @@ const BusinessCard = () => {
           'text-[16px] lg:text-[24px]',
         ]}
         mb={8}
-      >수입서류 검토 국가</Bold>
+      >{title}</Bold>
       <div
         className={styles.description}
       >
-        <Bold
+        <Medium
           classNames={[
-            'text-[16px] lg:text-[24px]',
+            'text-[26px] lg:text-[40px]',
             'text-green-1',
           ]}
-        >80</Bold>
+          mr={7}
+        >{highlight}</Medium>
         <Bold
           classNames={[
             'text-[16px] lg:text-[24px]',
           ]}
-        >개국</Bold>
+        >{highlightSuffix}</Bold>
       </div>
     </div>
   );

@@ -1,26 +1,19 @@
 'use client'
 
-import { useState, useEffect, ReactNode } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import Image from 'next/image';
-
+import { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
 import 'swiper/css';
 
 import styles from './clearance-business-scope.module.css';
-import useResponsive from '@/app/hooks/useResponsive';
-import BusinessSwipeList from '../../business-swipe-list/business-swipe-list';
-import Bold from '@/app/components/common/typo/bold/bold';
-import BusinessAccordion from '../../accordion/accordion';
-import Medium from '@/app/components/common/typo/medium/medium';
-
-const swiperContents = {
-  food : {
-    
-  }
-}
+import BusinessSwipeList from '@Components/business/business-swipe-list/business-swipe-list';
+import BusinessAccordion from '@Components/business/accordion/accordion';
+import useTranslate from '@Hooks/useTranslate';
+import { language } from '@Types/type';
 
 const ClearanceBusinessScope = () => {
-  const { greaterThanLarge } = useResponsive();
+  const { language: languageParam } = useParams<{ language: language }>();
+  const { t } = useTranslate('business.customs-clearance', languageParam);
+
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -33,18 +26,29 @@ const ClearanceBusinessScope = () => {
     >
       <BusinessAccordion
         number={1}
-        title={'식품'}
+        title={t('body.section-3.description.part-1.title')}
       >
         <BusinessSwipeList
-          contents={[1,1,1,1,1,1]}
+          contentObject={JSON.parse(t('body.section-3.description.part-1.description'))}
+          fileSrc={'/images/business/clearance/food'}
         />
       </BusinessAccordion>
       <BusinessAccordion
-        number={1}
-        title={'식품'}
+        number={2}
+        title={t('body.section-3.description.part-2.title')}
       >
         <BusinessSwipeList
-          contents={[1,1,1,1]}
+          contentObject={JSON.parse(t('body.section-3.description.part-2.description'))}
+          fileSrc={`/images/business/clearance/bio`}
+        />
+      </BusinessAccordion>
+      <BusinessAccordion
+        number={3}
+        title={t('body.section-3.description.part-3.title')}
+      >
+        <BusinessSwipeList
+          contentObject={JSON.parse(t('body.section-3.description.part-3.description'))}
+          fileSrc={'/images/business/clearance/etc'}
         />
       </BusinessAccordion>
     </ul>

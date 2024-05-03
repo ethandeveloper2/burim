@@ -5,6 +5,6 @@
 
   .description {
     display: flex;
-    
+    align-items: center;
   }
 }

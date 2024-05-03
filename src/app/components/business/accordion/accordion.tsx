@@ -1,9 +1,10 @@
 'use client'
+
 import { useState, useEffect, ReactNode } from 'react';
+import Image from 'next/image';
 
 import styles from './accordion.module.css';
 import Bold from '@Components/common/typo/bold/bold';
-import Image from 'next/image';
 import arrowUpIcon from '@Public/icons/arrow/arrow-up-green.svg';
 import arrowDownIcon from '@Public/icons/arrow/arrow-down-white.svg';
 
@@ -39,15 +40,15 @@ const BusinessAccordion = ({
           {number && (
             <Bold
               classNames={[
-                'text-[16px] lg:text-[24px]',
-                'text-green-1',
+                'text-[24px] lg:text-[40px]',
+                isOpen ? 'text-white' : 'text-black',
               ]}
             >{number}</Bold>
           )}
           <Bold
             classNames={[
-              'text-[16px] lg:text-[24px]',
-              'text-green-1',
+              'text-[20px] lg:text-[36px]',
+              isOpen ? 'text-white' : 'text-black',
             ]}
           >{title}</Bold>
         </div>
@@ -64,10 +65,9 @@ const BusinessAccordion = ({
           }}
         >
           <Image
+            className={styles.icon}
             src={isOpen ? arrowUpIcon : arrowDownIcon}
             alt={''}
-            width={36}
-            height={36}
           />
         </button>
       </section>

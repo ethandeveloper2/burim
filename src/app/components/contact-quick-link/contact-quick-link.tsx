@@ -2,10 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './contact-quick-link.module.css';
+import backgroundImage from '@Public/images/shortcut-bg.png';
 import arrowIcon from '@Public/icons/arrow/right.svg';
-import RoundButton from '../common/buttons/round-button/round-button';
-import Bold from '../common/typo/bold/bold';
-import Regular from '../common/typo/regular/regular';
+import RoundButton from '@Components/common/buttons/round-button/round-button';
+import Regular from '@Components/common/typo/regular/regular';
+import Bold from '@Components/common/typo/bold/bold';
 
 const ContactQuickLink = () => {
 
@@ -15,7 +16,7 @@ const ContactQuickLink = () => {
     >
       <Image
         className={styles.header}
-        src={''}
+        src={backgroundImage}
         alt={''}
         fill
       />

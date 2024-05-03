@@ -1,0 +1,99 @@
+{
+  "title": {
+    "first-line": "Business",
+    "second-line": "물류 사업"
+  },
+  "explain": "물류사업부에 오신 것을 환영합니다\n본사업부는 크게 두가지 업무로 분류 됩니다",
+  "body": {
+    "section-1": {
+      "part-1": {
+        "title": "01 보관업무",
+        "description": "Boo IoT자동화 물류센터는 보세(자율)창고입니다.\n자동화실, 일반실, 저온(냉장,냉동), 항온항습 및 신선특화실을 운영중이며 자동기술을 도입하여 철저한 Cold-Chain을 유지합니다"
+      },
+      "part-2": {
+        "title": "02 운송업무",
+        "description": "내륙에서 발생되는 보세운송과 일반운송 서비스를 제공합니다.\n상온, 냉장,냉동품을 화물차량과 철도 등을 이용하여 다양한 환경의 상.하차지에 대응이 가능하며 IoT기술이 도입되어 빠른배차, 도착시간 엄수 및 실시간 위치 공유등의 서비스도 함께 제공됩니다."
+      }
+    },
+    "section-2": {
+      "title": "한눈에 보기",
+      "description": {
+        "part-1": {
+          "title": "물류보수작업",
+          "highlight": "2,000",
+          "highlight-suffix": "TEU"
+        },
+        "part-2": {
+          "title": "보세화물 보관",
+          "highlight": "150,000 ",
+          "highlight-suffix": "M/T"
+        },
+        "part-3": {
+          "title": "당일 배차율",
+          "highlight": "95",
+          "highlight-suffix": "%"
+        },
+        "part-4": {
+          "title": "연간 운송건수",
+          "highlight": "10,000",
+          "highlight-suffix": "TEU"
+        }
+      }
+    },
+    "section-3": {
+      "title": "사업 분야",
+      "description": {
+        "part-1": {
+          "title": "보관",
+          "description": {
+            "1" : {
+              "first-line": "IoT 자동화",
+              "second-line": ""
+            },
+            "2" : {
+              "first-line": "일반실",
+              "second-line": ""
+            },
+            "3" : {
+              "first-line": "향온/향습실",
+              "second-line": ""
+            },
+            "4" : {
+              "first-line": "냉장/냉동",
+              "second-line": ""
+            },
+            "5" : {
+              "first-line": "보수 작업",
+              "second-line": "(선별/라벨링)"
+            }
+          }
+        },
+        "part-2": {
+          "title": "운송",
+          "description": {
+            "1" : {
+              "first-line": "냉장/냉동 컨테이너",
+              "second-line": ""
+            },
+            "2" : {
+              "first-line": "일반 컨테이너",
+              "second-line": "(HQ)"
+            },
+            "3" : {
+              "first-line": "윙카/일반차량",
+              "second-line": ""
+            },
+            "4" : {
+              "first-line": "철송",
+              "second-line": ""
+            }
+          }
+        }
+      }
+    }
+  },
+  "footer": {
+    "title": "부림무역이 궁금하시다면?\n지금 문의해보세요.",
+    "button-text": "자세히 보러가기"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "title": {
+    "first-line": "Business",
+    "second-line": "글로벌 마켓"
+  },
+  "explain": "글로벌마켓 사업부에 오신것을 환영합니다.\n본 사업부는 크게 두가지로 업무로 분류됩니다.",
+  "body": {
+    "section-1": {
+      "part-1": {
+        "title": "01 신선식품 팀",
+        "description": "1야채, 과일, 축산물 등 신선품의 직수출 또는 3국무역을 담당하고 있습니다.\n품질관리를 위하여 재배 및 생산단계에서 수출단계까지 국,내외 전문인력을 갖추어\n품질 브랜딩을 통하여, 신선품 수출시장을 선도하고 있습니다."
+      },
+      "part-2": {
+        "title": "02 가공,공산품 팀",
+        "description": "가공식품(OEM포함) 400품목 그리고 공산품 150품목을 직수출 B2B거래를 담당하고 있습니다.\n글로벌 시장의 요구사항을 반영한 맞춤형 상품을 개발 및 수출하여 무역대상국을 넓혀가고 있으며, 세계무대에서 한국브랜드의 위상을 높이기 위해 노력하고 있습니다."
+      }
+    },
+    "section-2": {
+      "title": "한눈에 보기",
+      "description": {
+        "part-1": {
+          "title": "PB 브랜드",
+          "highlight": "",
+          "highlight-suffix": ""
+        },
+        "part-2": {
+          "title": "수출국가",
+          "highlight": "10",
+          "highlight-suffix": "개국"
+        },
+        "part-3": {
+          "title": "수출품목",
+          "highlight": "500+",
+          "highlight-suffix": "건"
+        },
+        "part-4": {
+          "title": "수출량",
+          "highlight": "800",
+          "highlight-suffix": "TEU"
+        }
+      }
+    },
+    "section-3": {
+      "title": "사업 분야",
+      "description": {
+        "part-1": {
+          "title": "신선품",
+          "description": {
+            "1" : {
+              "first-line": "과일",
+              "second-line": "(딸기, 샤인머스켓, 참외 등)"
+            },
+            "2" : {
+              "first-line": "채소",
+              "second-line": "(배추, 양배추, 파프리카 등)"
+            },
+            "3" : {
+              "first-line": "축산물",
+              "second-line": "(한우, 한돈)"
+            }
+          }
+        },
+        "part-2": {
+          "title": "가공품",
+          "description": {
+            "1" : {
+              "first-line": "인스턴스",
+              "second-line": ""
+            },
+            "2" : {
+              "first-line": "즉석 조리",
+              "second-line": ""
+            },
+            "3" : {
+              "first-line": "김",
+              "second-line": ""
+            },
+            "4" : {
+              "first-line": "스낵",
+              "second-line": ""
+            },
+            "5" : {
+              "first-line": "음료",
+              "second-line": ""
+            },
+            "6" : {
+              "first-line": "보수 작업",
+              "second-line": "(선별/라벨링)"
+            }
+          }
+        },
+        "part-3": {
+          "title": "공산품",
+          "description": {
+            "1" : {
+              "first-line": "화장품",
+              "second-line": ""
+            },
+            "2" : {
+              "first-line": "생활용품",
+              "second-line": ""
+
+            },
+            "3" : {
+              "first-line": "장난감",
+              "second-line": ""
+            },
+            "4" : {
+              "first-line": "DIY",
+              "second-line": ""
+            }
+          }
+        }
+      }
+    }
+  },
+  "footer": {
+    "title": "부림무역이 궁금하시다면?\n지금 문의해보세요.",
+    "button-text": "자세히 보러가기"
+  }
+}

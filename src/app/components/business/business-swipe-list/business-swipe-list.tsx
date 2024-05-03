@@ -1,22 +1,22 @@
-'use client'
-
 import { useState, useEffect, ReactNode } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
-
 import 'swiper/css';
 
 import styles from './business-swipe-list.module.css';
-import useResponsive from '@/app/hooks/useResponsive';
-import Bold from '@/app/components/common/typo/bold/bold';
-import Medium from '@/app/components/common/typo/medium/medium';
+import useResponsive from '@Hooks/useResponsive';
+import Bold from '@Components/common/typo/bold/bold';
+import Medium from '@Components/common/typo/medium/medium';
 
 const BusinessSwipeList = ({
-  contents
+  contentObject,
+  fileSrc,
 } : {
-  contents: any[];
+  contentObject: {[key: string]: any};
+  fileSrc: string;
 }) => {
-  const initailHover = new Array(contents.length).fill(false);
+  const contentsKeys = Object.keys(contentObject);
+  const initailHover = new Array(contentsKeys.length).fill(false);
 
   const { greaterThanLarge } = useResponsive();
 
@@ -33,15 +33,15 @@ const BusinessSwipeList = ({
       spaceBetween={greaterThanLarge? 16 : 8}
       slidesPerView={'auto'}
     >
-      {contents.map((el, idx) => {
+      {contentsKeys.map((key: string, idx: number) => {
         return (
           <SwiperSlide
             className={styles.slide}
-            key={`slider ${idx}`}
+            key={`slider_${key}_${idx}`}
           >
             <Image
               className={styles.image}
-              src={`${'/images/business/clearance/food'}/${idx+1}.png`}
+              src={`${fileSrc}/${key}.png`}
               alt={''}
               fill
             />
@@ -64,7 +64,7 @@ const BusinessSwipeList = ({
                   className={styles['icon-wrapper']}
                 >
                   <Image
-                    src={`${'/images/business/clearance/food'}/icons/${idx+1}.svg`}
+                    src={`${fileSrc}/icons/${key}.svg`}
                     alt={''}
                     fill
                   />
@@ -72,16 +72,16 @@ const BusinessSwipeList = ({
               )}
               <Bold
                 classNames={[
-                  'text-[16px] lg:text-[36px]',
+                  'text-[16px] lg:text-[35px]',
                   'text-white',
                 ]}
-              >가공 식품</Bold>
+              >{contentObject[key]['first-line']}</Bold>
               <Medium
                 classNames={[
                   'text-[12px] lg:text-[24px]',
                   'text-white',
                 ]}
-              >(유가공 포함)</Medium>
+              >{contentObject[key]['second-line'] || ' '}</Medium>
             </div>
           </SwiperSlide>
         );
