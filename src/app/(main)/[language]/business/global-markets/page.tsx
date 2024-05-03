@@ -8,7 +8,7 @@ import ContactQuickLink from '@Components/contact-quick-link/contact-quick-link'
 import Regular from '@Components/common/typo/regular/regular';
 import Bold from '@Components/common/typo/bold/bold';
 import BusinessCard from '@Components/business/card/card';
-import ClearanceBusinessScope from '@Components/business/business-scope/clearance-business-scope/clearance-business-scope';
+import GlobalBusinessScope from '@Components/business/business-scope/global-business-scope/global-business-scope';
 import TitleWithEnglish from '@Components/title-with-english/title-with-english';
 import useTranslate from '@Hooks/useTranslate';
 import { language } from '@Types/type';
@@ -191,7 +191,7 @@ const GlobalMarketPage = ({ params } : {
             <div
               className={styles['ul-wrapper']}
             >
-              <ClearanceBusinessScope />
+              <GlobalBusinessScope />
             </div>
           </div>
         </div>

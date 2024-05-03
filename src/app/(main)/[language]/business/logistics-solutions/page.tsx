@@ -7,7 +7,7 @@ import ContactQuickLink from '@Components/contact-quick-link/contact-quick-link'
 import Regular from '@Components/common/typo/regular/regular';
 import Bold from '@Components/common/typo/bold/bold';
 import BusinessCard from '@Components/business/card/card';
-import ClearanceBusinessScope from '@Components/business/business-scope/clearance-business-scope/clearance-business-scope';
+import LogisticsBusinessScope from '@Components/business/business-scope/logistics-business-scope/logistics-business-scope';
 import TitleWithEnglish from '@Components/title-with-english/title-with-english';
 import useTranslate from '@Hooks/useTranslate';
 import { language } from '@Types/type';
@@ -167,7 +167,7 @@ const LogisticsSolutionsPage = ({ params } : {
             <div
               className={styles['ul-wrapper']}
             >
-              <ClearanceBusinessScope />
+              <LogisticsBusinessScope />
             </div>
           </div>
         </div>
