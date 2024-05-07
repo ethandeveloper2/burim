@@ -1,14 +1,13 @@
 import Image from 'next/image';
+import { Fragment } from 'react';
 
 import styles from './page.module.css';
-import bgImage from '@Public/images/company/fft/001.png';
-import Bold from '@Components/common/typo/bold/bold';
-import Medium from '@Components/common/typo/medium/medium';
-import Regular from '@Components/common/typo/regular/regular';
 import { language } from '@Types/type';
+import bgImage from '@Public/images/company/values/001.png';
 import useTranslate from '@Hooks/useTranslate';
-import CompanyPageTitle from '@/app/components/company/page-title/page-title';
-import FftSchema from '@/app/components/company/fft/fft-schema/fft-schema';
+import Medium from '@Components/common/typo/medium/medium';
+import CompanyPageTitle from '@Components/company/page-title/page-title';
+import FftSchema from '@Components/company/fft/fft-schema/fft-schema';
 
 const FftPage = ({ params } : {
   params: {
@@ -44,12 +43,16 @@ const FftPage = ({ params } : {
           >
             {Object.keys(explainObject).map((key: string) => {
               return (
-                <Medium
-                  classNames={[
-                    'text-[16px] lg:text-[32px]',
-                    'text-white',
-                  ]}
-                >{explainObject[key]}</Medium>
+                <Fragment
+                  key={`header_explain_${key}`}
+                >
+                  <Medium
+                    classNames={[
+                      'text-[16px] lg:text-[32px]',
+                      'text-white',
+                    ]}
+                  >{explainObject[key]}</Medium>
+                </Fragment>
               );
             })}
           </div>

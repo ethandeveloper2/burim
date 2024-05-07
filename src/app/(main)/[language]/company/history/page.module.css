@@ -1,0 +1,193 @@
+.container {
+  .header {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 1300px) {
+      height: 1080px;
+    }
+
+    .background {
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 390px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      padding: 0 20px;
+
+      @media (min-width: 1300px) {
+        max-width: 1140px;
+        padding: 0;
+      }
+
+      .explain-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 32px;
+
+        @media (min-width: 1300px) {
+          margin-top: 40px;
+          gap: 32px;
+        }
+      }
+    }
+  }
+
+  .body {
+    max-width: 390px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 66px 20px;
+
+    @media (min-width: 1300px) {
+      max-width: 1140px;
+      gap: 140px;
+      padding: 120px 0;
+    }
+
+    .section {
+      .section-header {
+        position: relative;
+        margin-bottom: 17px;
+
+        @media (min-width: 1300px) {
+          margin-bottom: 56px;
+        }
+
+        .section-header-img-wrapper {
+          position: relative;
+          width: 232px;
+          height: 127px;
+          flex-shrink: 0;
+
+          @media (min-width: 1300px) {
+            width: 754px;
+            height: 412px;
+          }
+
+          .header-img {
+            object-fit: cover;
+            border-radius: 10px;
+          }
+        }
+
+        .section-header-square {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          flex-shrink: 0;
+          transform: translateY(17px);
+          background-color: theme('colors.green.1');
+          width: 156px;
+          height: 113px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          padding: 10px;
+          border-radius: 10px;
+
+          @media (min-width: 1300px) {
+            width: 507px;
+            height: 369px;
+            transform: translateY(56px);
+            padding: 33px;
+          }
+        }
+      }
+
+      .section-body {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 32px;
+        /* border-left: 1px solid linear-gradient(90deg, rgba(128, 128, 128, 0.00) 0%, #808080 100%); */
+        padding-left: 20px;
+        padding-top: 16px;
+
+        @media (min-width: 1300px) {
+          gap: 50px;
+          padding-left: 150px;
+          padding-top: 52px;
+        }
+
+        .year-row {
+          position: relative;
+          padding-left: 27px;
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+          gap: 8px;
+
+          @media (min-width: 1300px) {
+            flex-direction: row;
+            gap: 80px;
+            padding-left: 45px;
+          }
+
+          .dot {
+            background-color: theme('colors.grey.700');
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, 50%);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+
+            @media (min-width: 1300px) {
+              width: 10px;
+              height: 10px;
+            }
+          }
+
+          .month-details {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .month-row {
+              display: flex;
+            }
+
+            .month-row > p:first-child {
+              width: 38px;
+              margin-right: 4px;
+
+              @media (min-width: 1300px) {
+                width: 60px;
+                margin-right: 32px;
+              }
+            }
+            .month-row > p:last-child {
+              width: calc(100% - 38px);
+
+              @media (min-width: 1300px) {
+                width: calc(100% - 60px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin-bottom: 0;
+
+    @media (min-width: 1300px) {
+      margin-bottom: 80px;
+    }
+  }
+}

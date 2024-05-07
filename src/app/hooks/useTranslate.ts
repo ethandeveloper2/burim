@@ -1,6 +1,6 @@
-import { language } from '@/app/types/type';
-import koJsons from '@/locales/ko/index';
-import EnJsons from '@/locales/ko/index';
+import { language } from '@Types/type';
+import koJsons from '@Locales/ko/index';
+import EnJsons from '@Locales/ko/index';
 
 const useTranslate = (fileKeys: string, languageCode: language) => {
   let codeFile = koJsons;
@@ -22,7 +22,6 @@ const useTranslate = (fileKeys: string, languageCode: language) => {
     const keyArray = keys.split('.');
 
     const result = keyArray.reduce((prev: {[key: string]: any} | string, key: string) => {
-
       if (typeof prev === 'string') {
         return prev;
       } else {
@@ -35,7 +34,6 @@ const useTranslate = (fileKeys: string, languageCode: language) => {
         }
       }
     }, findJsonFile(fileKeys));
-    
 
     if (typeof result === 'string') {
       return result;
