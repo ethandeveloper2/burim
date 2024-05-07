@@ -5,6 +5,8 @@ import fft from '@Locales/ko/company/fft.json';
 import customsClearance from '@Locales/ko/business/customs-clearance.json';
 import logisticsSolutions from '@Locales/ko/business/logistics-solutions.json';
 import globalMarkets from '@Locales/ko/business/global-markets.json';
+import recruit from '@Locales/ko/recruit/recruit.json';
+import recruitProcess from '@Locales/ko/recruit/process.json';
 
 export default {
   company : {
@@ -17,5 +19,9 @@ export default {
     'customs-clearance': customsClearance,
     'logistics-solutions': logisticsSolutions,
     'global-markets': globalMarkets
+  },
+  recruit: {
+    'recruit': recruit,
+    'process': recruitProcess,
   }
 };

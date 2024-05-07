@@ -1,0 +1,39 @@
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (min-width: 1300px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .header {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 0 20px;
+
+    @media (min-width: 1300px) {
+      max-width: 1140px;
+      margin-bottom: 70px;
+      padding: 0;
+    }
+
+    .explain {
+      margin-top: 16px;
+      
+      @media (min-width: 1300px) {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 50px;
+
+    @media (min-width: 1300px) {
+      margin-top: 235px;
+    }
+  }
+}

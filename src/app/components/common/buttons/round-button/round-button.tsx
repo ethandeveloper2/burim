@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useEffect, ReactNode, useCallback } from 'react';
+import { useState, useEffect, ReactNode } from 'react';
 
 import styles from './round-button.module.css';
+import { buttonBgColor } from '@Types/type';
 
 const RoundButton = ({
   children,
@@ -17,7 +18,7 @@ const RoundButton = ({
   full,
 } : {
   children: ReactNode,
-  bgColor: 'green' | 'white',
+  bgColor: buttonBgColor,
   clickHandler?: Function,
   mt?: number,
   mb?: number,
@@ -50,6 +51,7 @@ const RoundButton = ({
         ...(px && { paddingLeft: px, paddingRight: px}),
         ...(full && { width: '100%' }),
         ...(bgColor === 'green' && { backgroundColor: '#2E6C39', color: 'white' }),
+        ...(bgColor === 'grey' && { backgroundColor: '#B8B7B7', color: 'white' }),
         ...(bgColor === 'white' && { backgroundColor: 'white', color: 'black' }),
       }}
     >{children}</button>

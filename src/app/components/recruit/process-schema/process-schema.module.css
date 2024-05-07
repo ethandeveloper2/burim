@@ -1,0 +1,11 @@
+.container{
+  position: relative;
+  width: 350px;
+  height: 724px;
+  margin: 0 auto;
+
+  @media (min-width: 1300px) {
+    width: 1140px;
+    height: 492px;
+  }
+}

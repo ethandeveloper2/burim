@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import styles from './contact-quick-link.module.css';
 import backgroundImage from '@Public/images/shortcut-bg.png';
-import arrowIcon from '@Public/icons/arrow/right.svg';
+import arrowIcon from '@Public/icons/arrow/right-black.svg';
 import RoundButton from '@Components/common/buttons/round-button/round-button';
 import Regular from '@Components/common/typo/regular/regular';
 import Bold from '@Components/common/typo/bold/bold';
