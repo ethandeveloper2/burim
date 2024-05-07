@@ -1,0 +1,77 @@
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (min-width: 1300px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .header {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    padding: 0 20px;
+
+    @media (min-width: 1300px) {
+      max-width: 1140px;
+      margin-bottom: 40px;
+      padding: 0;
+    }
+  }
+
+  .body {
+    width: 100%;
+    max-width: 390px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (min-width: 1300px) {
+      gap: 56px;
+      max-width: 1140px;
+      padding: 0;
+    }
+
+    .li {
+      .map {
+        background-color: mediumpurple;
+        width: 350px;
+        height: 181.364px;
+        margin-bottom: 16px;
+
+        @media (min-width: 1300px) {
+          width: 1141.03px;
+          height: 591.69px;
+          margin-bottom: 24px;
+        }
+      }
+
+      .infos {
+        .address-info {
+          margin-bottom: 16px;
+
+          @media (min-width: 1300px) {
+            margin-bottom: 24px;
+          }
+        }
+
+        .tel-info {
+          .tel-details {
+            display: flex;
+            gap: 20px;
+            
+            .row {
+              flex-grow: 1;
+              display: flex;
+              gap: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
