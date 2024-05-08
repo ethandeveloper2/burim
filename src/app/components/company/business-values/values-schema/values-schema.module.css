@@ -1,0 +1,32 @@
+.container {
+  background-color: theme('colors.grey.50');
+
+  .header {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 50px 20px;
+
+    @media (min-width: 1300px) {
+      max-width: 1140px;
+      padding: 120px 0;
+    }
+
+    .schema-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .schema {
+        width: 174px;
+        height: 466px;
+  
+        @media (min-width: 1300px) {
+          width: 1140px;
+          height: 417px;
+        }
+      }
+    }
+  }
+}

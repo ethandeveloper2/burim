@@ -1,4 +1,4 @@
-// import businessValues from '@Locales/ko/company/business-values.json';
+import businessValues from '@Locales/ko/company/business-values.json';
 import fft from '@Locales/ko/company/fft.json';
 import history from '@Locales/ko/company/history.json';
 import location from '@Locales/ko/company/location.json';
@@ -10,7 +10,7 @@ import recruitProcess from '@Locales/ko/recruit/process.json';
 
 export default {
   company : {
-    // 'business-values': businessValues,
+    'business-values': businessValues,
     'fft': fft,
     'history': history,
     'location': location,
