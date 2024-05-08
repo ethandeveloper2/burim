@@ -1,9 +1,11 @@
 import styles from './page.module.css';
 import { language } from '@Types/type';
 import useTranslate from '@Hooks/useTranslate';
+import { companyLocations } from '@Constants/company';
 import Regular from '@Components/common/typo/regular/regular';
 import Bold from '@Components/common/typo/bold/bold';
 import TitleWithEnglish from '@Components/title-with-english/title-with-english';
+import KakaoMap from '@Components/company/location/kakao-map/kakao-map';
 
 const LocationPage = ({ params } : {
   params: {
@@ -39,11 +41,15 @@ const LocationPage = ({ params } : {
               className={styles.li}
               key={`location_${key}`}
             >
-              {/* TODO: 카카오맵 -> 좌표 */}
               <div
                 className={styles.map}
               >
-
+                <KakaoMap
+                  centerX={companyLocations[key].x}
+                  centerY={companyLocations[key].y}
+                  markerX={companyLocations[key].x}
+                  markerY={companyLocations[key].y}
+                />
               </div>
 
               <div

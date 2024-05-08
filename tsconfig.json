@@ -23,6 +23,7 @@
       "@Components/*" : ["./src/app/components/*"],
       "@Types/*" : ["./src/app/types/*"],
       "@Hooks/*" : ["./src/app/hooks/*"],
+      "@Constants/*" : ["./src/app/constants/*"],
       "@Utils/*" : ["./src/utils/*"],
       "@Locales/*" : ["./src/locales/*"],
     }
