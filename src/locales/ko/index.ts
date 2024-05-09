@@ -7,6 +7,7 @@ import logisticsSolutions from '@Locales/ko/business/logistics-solutions.json';
 import globalMarkets from '@Locales/ko/business/global-markets.json';
 import recruit from '@Locales/ko/recruit/recruit.json';
 import recruitProcess from '@Locales/ko/recruit/process.json';
+import contact from '@Locales/ko/contact/contact.json';
 
 export default {
   company : {
@@ -23,5 +24,8 @@ export default {
   recruit: {
     'recruit': recruit,
     'process': recruitProcess,
+  },
+  contact: {
+    'contact' : contact,
   }
 };

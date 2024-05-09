@@ -1,0 +1,16 @@
+.container {
+  width: 24px;
+  height: 24px;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checked {
+  background-color: theme('colors.grey.200');
+}
+
+.unchecked {
+  background-color: theme('colors.green.1');
+}
