@@ -6,22 +6,41 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './header.module.css';
-import useResponsive from '@/app/hooks/useResponsive';
-import MobileHeader from '@Components/header/mobile-header/mobile-header';
+import useResponsive from '@Hooks/useResponsive';
+import useTranslate from '@Hooks/useTranslate';
 import logo from '@Public/logos/logo.png';
-import Medium from '../../common/typo/medium/medium';
 import { language } from '@Types/type';
+import { links } from '@Constants/header-link';
+import Medium from '@Components/common/typo/medium/medium';
+import MobileHeader from '@Components/header/mobile-header/mobile-header';
 
 const Header = () => {
   const { language: languageParam } = useParams<{ language: language }>();
+  const { t } = useTranslate('header', languageParam);
   const {greaterThanLarge} = useResponsive();
 
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [hoverMenuKey, setHoverMenuKey] = useState('');
+
+  const menus = Object.keys(links);
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const getLinks = (key: string) => {
+    const obj = JSON.parse(t(key));
+    const objKeys = Object.keys(obj);
+
+    let linkList: string[] = [];
+
+    for(let i = 0; i < objKeys.length; i++) {
+      linkList[i] = obj[i + 1];
+    }
+
+    return linkList;
+  }
 
   return (mounted && (
     <>
@@ -48,30 +67,24 @@ const Header = () => {
               <div
                 className={styles.menus}
               >
-                <Medium
-                  classNames={[
-                    'text-[18px]',
-                    styles.menu
-                  ]}
-                >COMPANY</Medium>
-                <Medium
-                  classNames={[
-                    'text-[18px]',
-                    styles.menu
-                  ]}
-                >BUSINESS</Medium>
-                <Medium
-                  classNames={[
-                    'text-[18px]',
-                    styles.menu
-                  ]}
-                >CONTACT US</Medium>
-                <Medium
-                  classNames={[
-                    'text-[18px]',
-                    styles.menu
-                  ]}
-                >RECRUIT</Medium>
+                {menus.map((menu) => {
+                  return (
+                    <div
+                      key={`header_menu_${menu}`}
+                      onMouseOver={() => {
+                        setIsOpen(true);
+                        setHoverMenuKey(menu);
+                      }}
+                    >
+                      <Medium
+                        classNames={[
+                          'text-[18px]',
+                          styles.menu
+                        ]}
+                      >{menu}</Medium>
+                    </div>
+                  );
+                })}
               </div>
               <div
                 className={styles.language}
@@ -80,9 +93,35 @@ const Header = () => {
               </div>
             </div>
           </div>
+          {isOpen && (
+            <div
+              className={styles.layer}
+              onMouseOver={() => {
+                setIsOpen(true);
+              }}
+              onMouseOut={() => {
+                setIsOpen(false);
+              }}
+            >
+              <div
+                className={styles['layer-menu-container']}
+              >
+                {getLinks(hoverMenuKey).map((el, idx) => {
+                  return (
+                    <div
+                      className={styles['layer-menu']}
+                    >
+                      <Link
+                        href={`/${languageParam}${links[hoverMenuKey][idx+1]}`}
+                      >{el}</Link>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </header>
       ) : (
-        // 모바일
         <MobileHeader />
       )}
     </>

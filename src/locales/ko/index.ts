@@ -1,3 +1,4 @@
+import header from '@Locales/ko/header/header.json';
 import businessValues from '@Locales/ko/company/business-values.json';
 import fft from '@Locales/ko/company/fft.json';
 import history from '@Locales/ko/company/history.json';
@@ -10,6 +11,7 @@ import recruitProcess from '@Locales/ko/recruit/process.json';
 import contact from '@Locales/ko/contact/contact.json';
 
 export default {
+  header: header,
   company : {
     'business-values': businessValues,
     'fft': fft,

@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   border-bottom: 1px solid theme('colors.grey.200');
   height: var(--header-height);
   padding-top: 16px;
@@ -30,6 +31,29 @@
 
       .language {
 
+      }
+    }
+  }
+
+  .layer {
+    position: absolute;
+    top: calc(100% + 1px);
+    z-index: 5;
+    width: 100%;
+    background-color: theme('colors.white');
+    border-bottom: 1px solid theme('colors.grey.200');
+
+    .layer-menu-container {
+      max-width: 1144px;
+      margin: 0 auto;
+      padding: 24px 123px 24px 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 2px;
+
+      .layer-menu {
+        padding: 14px 24px;
       }
     }
   }
