@@ -12,7 +12,7 @@ import ContactUsPage from '@/app/(main)/[language]/contact/page';
 import Bold from '@Components/common/typo/bold/bold';
 import Medium from '@Components/common/typo/medium/medium';
 import Regular from '@Components/common/typo/regular/regular';
-// import LinkCollection from '@Components/main/link-collection/link-collection';
+import LinkCollection from '@Components/main/link-collection/link-collection';
 
 const LanguageHome = () => {
   const [mounted, setMounted] = useState(false);
@@ -91,7 +91,7 @@ const LanguageHome = () => {
       <section
         className={styles.body2}
       >
-        {/* <LinkCollection /> */}
+        <LinkCollection />
       </section>
 
       <section

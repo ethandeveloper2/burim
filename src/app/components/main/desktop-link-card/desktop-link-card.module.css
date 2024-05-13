@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 61px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+  .background {
+    border-radius: 5px;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .hover-icon {
+    position: absolute;
+    top: 0;
+    right: 32px;
+  }
+
+  .header {
+    .row {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

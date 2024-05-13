@@ -16,7 +16,7 @@ const RoundButton = ({
   px,
   py,
   full,
-  disable = true,
+  disable = false,
 } : {
   children: ReactNode,
   bgColor: buttonBgColor,
