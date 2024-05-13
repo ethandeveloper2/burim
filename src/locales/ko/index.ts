@@ -12,7 +12,7 @@ import recruitProcess from '@Locales/ko/recruit/process.json';
 import contact from '@Locales/ko/contact/contact.json';
 
 export default {
-  header: header,
+  header,
   home: main,
   company : {
     'business-values': businessValues,
@@ -29,7 +29,5 @@ export default {
     'recruit': recruit,
     'process': recruitProcess,
   },
-  contact: {
-    'contact' : contact,
-  }
+  contact,
 };

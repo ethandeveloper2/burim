@@ -21,7 +21,7 @@ import Input from '@Components/common/input/input/input';
 
 const ContactUsPage = () => {
   const { language: languageParam } = useParams<{ language: language }>();
-  const { t } = useTranslate('contact.contact', languageParam);
+  const { t } = useTranslate('contact', languageParam);
 
   const [mounted, setMounted] = useState(false);
   const [isAgree, setIsAgree] = useState(false);
@@ -76,6 +76,7 @@ const ContactUsPage = () => {
         setEmail('');
         setName('');
         setTextarea('');
+        setIsAgree(false);
       }
     } catch (err) {
       alert('전송 실패');
