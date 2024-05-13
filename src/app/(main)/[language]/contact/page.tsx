@@ -2,12 +2,16 @@
 
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
+import Image from 'next/image';
 
 import styles from './page.module.css';
 import { language } from '@Types/type';
+import closeBtnIcon from '@Public/icons/close-grey.svg';
 import useTranslate from '@Hooks/useTranslate';
 import { validateEmail } from '@Utils/validation';
 import Regular from '@Components/common/typo/regular/regular';
+import Bold from '@Components/common/typo/bold/bold';
+import Medium from '@Components/common/typo/medium/medium';
 import TitleWithEnglish from '@Components/title-with-english/title-with-english';
 import RoundButton from '@Components/common/buttons/round-button/round-button';
 import Checkbox from '@Components/common/checkbox/checkbox';
@@ -84,13 +88,42 @@ const ContactUsPage = () => {
     >
       {/* 약관 모달 */}
       {modalOpen && (
-        <Modal>
-          <button
-            type={'button'}
-            onClick={() => {
-              setModalOpen(false);
-            }}
-          >닫기</button>
+        <Modal
+          maxWidth={700}
+        >
+          <div
+            className={styles['modal-header']}
+          >
+            <Bold
+              classNames={[
+                'text-[16px] lg:text-[24px]',
+                styles.title,
+              ]}
+            >{t('body.terms.1.title')}</Bold>
+            <button
+              className={styles.btn}
+              type={'button'}
+              onClick={() => {
+                setModalOpen(false);
+              }}
+            >
+              <Image
+                src={closeBtnIcon}
+                alt={'close modal button'}
+                width={20}
+                height={20}
+              />
+            </button>
+          </div>
+          <div
+            className={styles['modal-body']}
+          >
+            <Medium
+              classNames={[
+                'text-[14px] lg:text-[20px]',
+              ]}
+            >{t('body.terms.1.content')}</Medium>
+          </div>
         </Modal>
       )}
 

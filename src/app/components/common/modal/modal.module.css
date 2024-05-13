@@ -2,8 +2,7 @@
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: theme('colors.black');
-  opacity: 30%;
+  background-color: rgba(0, 0, 0, 0.32);
   z-index: 10;
   top: 0;
   bottom: 0;
@@ -12,10 +11,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 50px;
 
   .modal {
     background-color: theme('colors.white');
-    padding: 20px;
+    padding: 16px;
+    border-radius: 8px;
   }
 }

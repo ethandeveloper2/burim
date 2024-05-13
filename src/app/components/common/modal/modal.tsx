@@ -32,7 +32,6 @@ const Modal = ({
       <div
         className={styles.modal}
         style={{
-          'width': '390px',
           'maxWidth': maxWidth ? maxWidth : '100%',
           'paddingTop': pt ? pt : '10px',
           'paddingBottom': pb ? pb : '10px',

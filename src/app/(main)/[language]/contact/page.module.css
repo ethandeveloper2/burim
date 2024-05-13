@@ -6,7 +6,28 @@
     padding-top: 150px;
     padding-bottom: 150px;
   }
-  
+
+  .modal-header {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .title {
+      max-width: calc(100% - 20px - 10px);
+    }
+
+    .btn{
+      flex-shrink: 0;
+    }
+  }
+
+  .modal-body {
+    padding-top: 16px;
+  }
+
   .header {
     width: 100%;
     max-width: 390px;
