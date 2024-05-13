@@ -16,6 +16,7 @@ const RoundButton = ({
   px,
   py,
   full,
+  disable = true,
 } : {
   children: ReactNode,
   bgColor: buttonBgColor,
@@ -27,6 +28,7 @@ const RoundButton = ({
   px?: number,
   py?: number,
   full?: boolean,
+  disable?: boolean,
 }) => {
   const [mounted, setMounted] = useState(false);
 
@@ -53,7 +55,9 @@ const RoundButton = ({
         ...(bgColor === 'green' && { backgroundColor: '#2E6C39', color: 'white' }),
         ...(bgColor === 'grey' && { backgroundColor: '#B8B7B7', color: 'white' }),
         ...(bgColor === 'white' && { backgroundColor: 'white', color: 'black' }),
+        ...(disable && { backgroundColor: '#B8B7B7', color: 'white' }),
       }}
+      disabled={disable}
     >{children}</button>
   ));
 }

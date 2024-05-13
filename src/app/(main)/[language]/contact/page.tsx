@@ -6,6 +6,7 @@ import { useParams } from 'next/navigation';
 import styles from './page.module.css';
 import { language } from '@Types/type';
 import useTranslate from '@Hooks/useTranslate';
+import { validateEmail } from '@Utils/validation';
 import Regular from '@Components/common/typo/regular/regular';
 import TitleWithEnglish from '@Components/title-with-english/title-with-english';
 import RoundButton from '@Components/common/buttons/round-button/round-button';
@@ -28,6 +29,54 @@ const ContactUsPage = () => {
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const sendEmail = async () => {
+    if (!name) {
+      alert('이름을 입력해주세요.');
+
+      return ;
+    }
+
+    if (!validateEmail(email).result) {
+      alert('이메일 형식을 확인해주세요.');
+
+      return ;
+    }
+
+    if (!textarea) {
+      alert('문의 내용을 입력해주세요.');
+
+      return ;
+    }
+
+    try {
+      const res = await fetch(`/api/contact`,  {
+        method: 'POST',
+        body: JSON.stringify({
+          from: email,
+          name: name,
+          text: textarea,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      const data = await res.json();
+  
+      if (!res.ok) {
+        throw new Error(data.message || '서버 요청 실패');
+      } else {
+        alert('문의하기 메일을 보냈습니다.');
+
+        setEmail('');
+        setName('');
+        setTextarea('');
+      }
+    } catch (err) {
+      alert('전송 실패');
+    }
+  }
 
   return (
     <div
@@ -130,6 +179,8 @@ const ContactUsPage = () => {
             py={9}
             full
             bgColor={'green'}
+            clickHandler={sendEmail}
+            disable={!isAgree}
           >
             <Regular
               classNames={[

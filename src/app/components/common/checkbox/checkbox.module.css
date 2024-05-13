@@ -8,9 +8,9 @@
 }
 
 .checked {
-  background-color: theme('colors.grey.200');
+  background-color: theme('colors.green.1');
 }
 
 .unchecked {
-  background-color: theme('colors.green.1');
+  background-color: theme('colors.grey.200');
 }
