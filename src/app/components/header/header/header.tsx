@@ -110,6 +110,7 @@ const Header = () => {
                   return (
                     <div
                       className={styles['layer-menu']}
+                      key={`layer_menu_${el}`}
                     >
                       <Link
                         href={`/${languageParam}${links[hoverMenuKey][idx+1]}`}
