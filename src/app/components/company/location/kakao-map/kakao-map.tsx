@@ -28,7 +28,7 @@ const KakaoMap = ({
       kakao.maps.load(() => {
         // 지도 생성
         const map = new kakao.maps.Map(mapEl.current, {
-          center: new kakao.maps.LatLng(markerY, centerX),
+          center: new kakao.maps.LatLng(centerY, centerX),
           mapTypeId : kakao.maps.MapTypeId.ROADMAP,
           // level: 6,
           // angle: 80,
