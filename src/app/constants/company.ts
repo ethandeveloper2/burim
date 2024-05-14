@@ -1,5 +1,7 @@
 // 회사 위치 정보
-export const companyLocations = {
+export const companyLocations : {
+  [key : string]: any;
+} = {
   '1': {
     'address': '부산 강서구 범방3로30번길 12',
     'x': '128.8801851331562',

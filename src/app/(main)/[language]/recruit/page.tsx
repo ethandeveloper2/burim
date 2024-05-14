@@ -45,10 +45,10 @@ const RecruitListPage = ({ params } : {
                 key={`recruit_${key}`}
               >
                 <RecruitCard
-                  subTitle={contentsObj[key].sub}
-                  title={contentsObj[key].title}
-                  deadline={contentsObj[key].deadline}
-                  link={`/${params.language}/recruit/${key}`}
+                  subTitle={t(`body.contents.${key}.sub`)}
+                  title={t(`body.contents.${key}.title`)}
+                  deadline={t(`body.contents.${key}.deadline`)}
+                  link={`/${params.language}/${t(`body.contents.${key}.link`)}`}
                 />
               </li>
             )

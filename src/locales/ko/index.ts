@@ -7,9 +7,10 @@ import location from '@Locales/ko/company/location.json';
 import customsClearance from '@Locales/ko/business/customs-clearance.json';
 import logisticsSolutions from '@Locales/ko/business/logistics-solutions.json';
 import globalMarkets from '@Locales/ko/business/global-markets.json';
+import contact from '@Locales/ko/contact/contact.json';
 import recruit from '@Locales/ko/recruit/recruit.json';
 import recruitProcess from '@Locales/ko/recruit/process.json';
-import contact from '@Locales/ko/contact/contact.json';
+import experiencedSalse from '@Locales/ko/recruit/notices/experienced/sales.json';
 
 export default {
   header,
@@ -28,6 +29,13 @@ export default {
   recruit: {
     'recruit': recruit,
     'process': recruitProcess,
+  },
+  ['recruit-notice']: {
+    'salse' : {
+      // 'entry': undefined,
+      'experienced': experiencedSalse,
+      // 'all': undefined,
+    },
   },
   contact,
 };

@@ -77,6 +77,7 @@ const RecruitCard = ({
           bgColor={dDay > 0 ? 'green' : 'grey'}
           py={greaterThanLarge ? 15 : 12}
           px={greaterThanLarge ? 24 : 12}
+          full
         >
           <div
             className={styles['btn-wrapper']}

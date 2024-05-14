@@ -25,10 +25,16 @@
   }
 
   .link {
+    width: auto;
     flex-shrink: 0;
+
+    @media (min-width: 1300px) {
+      width: 135px;
+    }
 
     .btn-wrapper {
       display: flex;
+      justify-content: space-between;
       align-items: center;
       gap: 15px;
     }

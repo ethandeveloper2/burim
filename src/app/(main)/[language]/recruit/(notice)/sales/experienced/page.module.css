@@ -1,0 +1,141 @@
+.container {
+  position: relative;
+
+  .header {
+    display: none;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    @media (min-width: 1300px) {
+      display: block;
+    }
+  }
+
+  .body {
+    width: 100%;
+    max-width: 390px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media (min-width: 1300px) {
+      flex-direction: row-reverse;
+      max-width: 1140px;
+      padding: 0;
+      gap: 58px;
+    }
+
+    .right {
+      width: 100%;
+      padding-top: 50px;
+
+      @media (min-width: 1300px) {
+        width: 411px;
+        padding-top: 0;
+      }
+
+      .mobile-title {
+        display: block;
+
+        @media (min-width: 1300px) {
+          display: none;
+        }
+      }
+
+      .summary {
+        border: 1px solid theme('colors.grey.300');
+        padding: 24px;
+
+        .summary-row {
+          display: flex;
+          border-bottom: 1px solid theme('colors.grey.300');
+          padding: 16px 0;
+
+          & .label {
+            width: 100px;
+            margin-right: 2px;
+          }
+
+          & .value {
+            flex: 1;
+          }
+        }
+
+        .map {
+          width: 100%;
+          height: 183px;
+          margin-top: 16px;
+        }
+      }
+
+      .apply-btn {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 12px;
+        padding: 0 20px;
+
+        @media (min-width: 1300px) {
+          position: relative;
+          bottom: auto;
+          padding: 0;
+          padding-top: 16px;
+        }
+      }
+    }
+
+    .left {
+      flex: 1;
+
+      .desktop-title {
+        display: none;
+
+        @media (min-width: 1300px) {
+          display: block;
+        }
+      }
+
+      .ol {
+        & .li {
+          list-style: decimal;
+          margin-left: 30px;
+        }
+      }
+
+      .ul {
+        & .li {
+          list-style: disc;
+          margin-left: 30px;
+        }
+      }
+
+      .notice {
+        margin-bottom: 32px;
+      }
+            
+      .steps {
+        margin-top: 16px;
+
+        @media (min-width: 1300px) {
+          margin-top: 24px;
+        }
+
+        .step {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 50px;
+
+    @media (min-width: 1300px) {
+      padding-top: 160px;
+      padding-bottom: 80px;
+    }
+  }
+}
