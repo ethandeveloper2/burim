@@ -1,5 +1,6 @@
 import main from '@Locales/ko/main/main.json';
 import header from '@Locales/ko/header/header.json';
+import footer from '@Locales/ko/footer/footer.json';
 import businessValues from '@Locales/ko/company/business-values.json';
 import fft from '@Locales/ko/company/fft.json';
 import history from '@Locales/ko/company/history.json';
@@ -14,6 +15,7 @@ import experiencedSalse from '@Locales/ko/recruit/notices/experienced/sales.json
 
 export default {
   header,
+  footer,
   home: main,
   company : {
     'business-values': businessValues,

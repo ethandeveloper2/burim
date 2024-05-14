@@ -1,20 +1,27 @@
+'use client'
+
+import { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './footer.module.css';
+import { language } from '@Types/type';
+import useTranslate from '@Hooks/useTranslate';
 import footerLogo from '@Public/logos/logo-grey.png';
 import Regular from '@Components/common/typo/regular/regular';
 
-const secFirst = '대표  홍길동   ㅣ   사업자 등록 번호  123-4567-890';
-const secSecond = '서울특별시 가가동 나나로 111-2 8층';
-const secThird = '통신 판매업 신고  제 2014-서울홍홍홍 0291호';
-const trdFirst = '고객지원 111-2345';
-const trdSecond = '이메일 help@gmail.com';
-const trdThird = '평일 09:00 - 17:00 토,일 공휴일 휴무';
-const copyRight = 'Copyrightⓒ2023 Data nugget All rights reserved.';
-
 const Footer = () => {
-  return (
+  const { language: languageParam } = useParams<{ language: language }>();
+  const { t } = useTranslate('footer', languageParam);
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  return (mounted && (
     <footer
       className={styles.container}
     >
@@ -35,19 +42,19 @@ const Footer = () => {
               'text-[14px]',
               styles['header-text'],
             ]}
-          >{secFirst}</Regular>
+          >{t(`company.middle.1`)}</Regular>
           <Regular
             classNames={[
               'text-[14px]',
               styles['header-text'],
             ]}
-          >{secSecond}</Regular>
+          >{t(`company.middle.2`)}</Regular>
           <Regular
             classNames={[
               'text-[14px]',
               styles['header-text'],
             ]}
-          >{secThird}</Regular>
+          >{t(`company.middle.3`)}</Regular>
         </div>
         <div
           className={styles.third}
@@ -57,19 +64,19 @@ const Footer = () => {
               'text-[14px]',
               styles['header-text'],
             ]}
-          >{trdFirst}</Regular>
+          >{t(`company.right.1`)}</Regular>
           <Regular
             classNames={[
               'text-[14px]',
               styles['header-text'],
             ]}
-          >{trdSecond}</Regular>
+          >{t(`company.right.2`)}</Regular>
           <Regular
             classNames={[
               'text-[14px]',
               styles['header-text'],
             ]}
-          >{trdThird}</Regular>
+          >{t(`company.right.3`)}</Regular>
         </div>
       </div>
 
@@ -86,12 +93,12 @@ const Footer = () => {
         >
           <Link
             className={styles.link}
-            href={'#'}
-          >이용약관</Link>
+            href={`/${languageParam}/terms`}
+          >{t(`policy.terms`)}</Link>
           <Link
             className={styles.link}
-            href={'#'}
-          >개인정보처리방침</Link>
+            href={`/${languageParam}/privacy`}
+          >{t(`policy.privacy`)}</Link>
         </div>
         <Regular
           classNames={[
@@ -99,10 +106,10 @@ const Footer = () => {
             styles.copyright,
             styles['footer-text'],
           ]}
-        >{copyRight}</Regular>
+        >{t('copyright')}</Regular>
       </div>
     </footer>
-  );
+  ));
 }
 
 export default Footer;
