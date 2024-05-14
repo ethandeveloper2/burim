@@ -1,6 +1,7 @@
 import main from '@Locales/ko/main/main.json';
 import header from '@Locales/ko/header/header.json';
 import footer from '@Locales/ko/footer/footer.json';
+import quickLink from '@Locales/ko/link/link.json';
 import businessValues from '@Locales/ko/company/business-values.json';
 import fft from '@Locales/ko/company/fft.json';
 import history from '@Locales/ko/company/history.json';
@@ -17,6 +18,7 @@ export default {
   header,
   footer,
   home: main,
+  ['quick-link']: quickLink,
   company : {
     'business-values': businessValues,
     'fft': fft,

@@ -1,7 +1,13 @@
+'use client'
+
+import { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './contact-quick-link.module.css';
+import { language } from '@Types/type';
+import useTranslate from '@Hooks/useTranslate';
 import backgroundImage from '@Public/images/shortcut-bg.png';
 import arrowIcon from '@Public/icons/arrow/right-black.svg';
 import RoundButton from '@Components/common/buttons/round-button/round-button';
@@ -9,8 +15,16 @@ import Regular from '@Components/common/typo/regular/regular';
 import Bold from '@Components/common/typo/bold/bold';
 
 const ContactQuickLink = () => {
+  const { language: languageParam } = useParams<{ language: language }>();
+  const { t } = useTranslate('quick-link', languageParam);
 
-  return (
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  return (mounted && (
     <div
       className={styles.container}
     >
@@ -30,9 +44,9 @@ const ContactQuickLink = () => {
             'text-white',
           ]}
           align={'center'}
-        >부림무역이 궁금하시다면? 지금 문의해보세요.</Bold>
+        >{t('description')}</Bold>
         <Link
-          href={'/contact'}
+          href={`/${languageParam}/contact`}
         >
           <RoundButton
             bgColor={'white'}
@@ -46,7 +60,7 @@ const ContactQuickLink = () => {
                 classNames={[
                   'text-[14px] lg:text-[20px]',
                 ]}
-              >자세히 보러가기</Regular>
+              >{t('btn')}</Regular>
               <Image
                 src={arrowIcon}
                 alt={''}
@@ -58,7 +72,7 @@ const ContactQuickLink = () => {
         </Link>
       </div>
     </div>
-  );
+  ));
 }
 
 export default ContactQuickLink;
