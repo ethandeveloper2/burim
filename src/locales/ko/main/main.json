@@ -1,4 +1,37 @@
 {
+  "body1": {
+    "title": {
+        "sub": "About our Company",
+        "main": "Since 1994,"
+    },
+    "description": "부림교역은 수입에 필요한 대행업무를 전문적으로 제공합니다.\n검역, 통관, 법리검토, 보관 및 운송 등 각 업무를 일원화 하여,\n고객중심의 정확하고 빠른 FFT(Focus & Fast Track)서비스를 제공합니다.",
+    "btn": "자세히 보러가기",
+    "summary": {
+      "title": "연간",
+      "description": {
+        "part-1": {
+          "highlight": "5,500",
+          "highlight-suffix": "건",
+          "explan": "B/L 신고건수"
+        },
+        "part-2": {
+          "highlight": "7,500",
+          "highlight-suffix": "건",
+          "explan": "검역 신고건수"
+        },
+        "part-3": {
+          "highlight": "9,500",
+          "highlight-suffix": "TEU",
+          "explan": "운송처리"
+        },
+        "part-4": {
+          "highlight": "150,000",
+          "highlight-suffix": "M/T",
+          "explan": "보세화물 저장능력"
+        }
+      }
+    }
+  },
   "links": {
     "1": {
       "title": "검역통관",
