@@ -27,6 +27,8 @@ const GlobalBusinessScope = () => {
       <BusinessAccordion
         number={1}
         title={t('body.section-3.description.part-1.title')}
+        downloadBtn
+        downloadBtnText={t('body.section-3.description.part-1.btn')}
       >
         <BusinessSwipeList
           contentObject={JSON.parse(t('body.section-3.description.part-1.description'))}
@@ -36,6 +38,8 @@ const GlobalBusinessScope = () => {
       <BusinessAccordion
         number={2}
         title={t('body.section-3.description.part-2.title')}
+        downloadBtn
+        downloadBtnText={t('body.section-3.description.part-1.btn')}
       >
         <BusinessSwipeList
           contentObject={JSON.parse(t('body.section-3.description.part-2.description'))}
@@ -45,6 +49,8 @@ const GlobalBusinessScope = () => {
       <BusinessAccordion
         number={3}
         title={t('body.section-3.description.part-3.title')}
+        downloadBtn
+        downloadBtnText={t('body.section-3.description.part-1.btn')}
       >
         <BusinessSwipeList
           contentObject={JSON.parse(t('body.section-3.description.part-3.description'))}

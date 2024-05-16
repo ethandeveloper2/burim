@@ -45,6 +45,7 @@
       "description": {
         "part-1": {
           "title": "신선품",
+          "btn": "다운로드",
           "description": {
             "1" : {
               "first-line": "과일",
@@ -62,6 +63,7 @@
         },
         "part-2": {
           "title": "가공품",
+          "btn": "다운로드",
           "description": {
             "1" : {
               "first-line": "인스턴스",
@@ -87,6 +89,7 @@
         },
         "part-3": {
           "title": "공산품",
+          "btn": "다운로드",
           "description": {
             "1" : {
               "first-line": "화장품",

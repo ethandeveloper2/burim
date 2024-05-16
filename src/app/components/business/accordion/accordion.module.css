@@ -20,6 +20,15 @@
       @media (min-width: 1300px) {
         gap:30px;
       }
+
+      .download-btn {
+        background-color: theme('colors.green.3');
+        border-radius: 8px;
+        padding: 9px 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
     }
 
     .btn {
