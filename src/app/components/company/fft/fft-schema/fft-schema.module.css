@@ -8,6 +8,7 @@
 
   .img-1 {
     width: 100%;
+    margin-bottom: 16px;
 
     @media (min-width: 1300px) {
       margin-bottom: 20px;
