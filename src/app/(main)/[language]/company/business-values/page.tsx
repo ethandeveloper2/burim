@@ -73,6 +73,7 @@ const BusinessValuesPage = ({ params } : {
             return (
               <li
                 className={styles.li}
+                key={`value_${key}`}
               >
                 <Bold
                   classNames={[

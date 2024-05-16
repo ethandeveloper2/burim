@@ -179,10 +179,11 @@ const LanguageHome = ({ params } : {
             <ul
               className={styles['summary-ul']}
             >
-              {summaryKeys.map((key, idx) => {
+              {summaryKeys.map((key) => {
                 return (
                   <li
                     className={styles['summary-li']}
+                    key={`summary_${key}`}
                   >
                     <li
                       className={styles['summary-first-line']}

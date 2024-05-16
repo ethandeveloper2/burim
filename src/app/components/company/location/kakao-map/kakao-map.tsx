@@ -32,6 +32,7 @@ const KakaoMap = ({
           mapTypeId : kakao.maps.MapTypeId.ROADMAP,
           // level: 6,
           // angle: 80,
+          // rotation: 1.7
         }); 
     
         // 마커 생성
@@ -41,7 +42,7 @@ const KakaoMap = ({
         });
       });
     }
-  }, []);
+  }, [centerY, centerX, markerY, markerX]);
 
   return (mounted && (
     <div
