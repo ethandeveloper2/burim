@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
 
 import styles from './page.module.css';
 import { language } from '@Types/type';
@@ -13,12 +14,9 @@ import Modal from '@Components/common/modal/modal';
 import Textarea from '@Components/common/input/textarea/textarea';
 import Input from '@Components/common/input/input/input';
 
-const ContactUsPage = ({ params } : {
-  params: {
-    language: language;
-  }
-}) => {
-  const { t } = useTranslate('contact.contact', params.language);
+const ContactUsPage = () => {
+  const { language: languageParam } = useParams<{ language: language }>();
+  const { t } = useTranslate('contact.contact', languageParam);
 
   const [mounted, setMounted] = useState(false);
   const [isAgree, setIsAgree] = useState(false);
