@@ -23,6 +23,15 @@ const RootLayout = ({
           defer
           src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_KEY}&autoload=false`}
         />
+        {/* lottie 파일 */}
+        <script 
+          src={'https://cdnjs.com/libraries/bodymovin'}
+          type={'text/javascript'}
+        />
+        {/* IFrame Player API 로드 */}
+        <script
+          src={'https://www.youtube.com/iframe_api'}
+        />
       </head>
       <body>
         <Header />

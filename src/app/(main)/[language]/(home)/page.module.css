@@ -83,8 +83,11 @@
     }
 
     .destop-map {
+      position: absolute;
       z-index: -1;
-      object-fit: cover;
+      width: 100%;
+      height: 1204px;
+      overflow: hidden;
     }
 
     .mobile-map {

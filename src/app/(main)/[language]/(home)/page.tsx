@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import lottie from 'lottie-web';
 
 import styles from './page.module.css';
 import { language } from '@Types/type'
@@ -17,11 +18,13 @@ import Regular from '@Components/common/typo/regular/regular';
 import RoundButton from '@Components/common/buttons/round-button/round-button';
 import LinkCollection from '@Components/main/link-collection/link-collection';
 
-const LanguageHome = ({ params } : {
+const LanguageHome = ({ params } : { 
   params: {
     language: language;
   }
 }) => {
+  const mapContainer = useRef<HTMLDivElement>(null);
+
   const { t } = useTranslate('home', params.language);
   const { greaterThanLarge } = useResponsive();
 
@@ -34,6 +37,54 @@ const LanguageHome = ({ params } : {
     setMounted(true);
   }, []);
 
+  useEffect(() => {
+    if (mapContainer.current) {
+      lottie.loadAnimation({
+        container: mapContainer.current,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: `/images/main/lottie.json`,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+      });
+    }
+  });
+
+  useEffect(() => {
+    // TODO: 레이어 추가해서 인터렉션 막기
+    // 플레이어 생성
+    new window.YT.Player('player', {
+      videoId: 'XnZYxOyWD0c',
+      playerVars: {
+        autoplay: 1, // 자동 재생
+        mute : 1, // 음소거
+        loop : 1, // 반복재생
+        controls: 0, // 컨트롤 숨김
+        rel: 0, // 관련 동영상 표시 안 함
+        modestbranding: 1, // 유투브 로고 제거
+				disablekb: 1, //키보드 컨트롤 비활성
+      },
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange,
+      }
+    });
+  });
+
+  const onPlayerReady = (event: any) => {
+    event.target.mute();
+    event.target.playVideo();
+  }
+
+  const onPlayerStateChange = (event: any) => {
+    // 반복재생
+    if (event.data == window.YT.PlayerState.ENDED) {
+      event.target.playVideo();
+    }
+  }
+
   return (mounted && (
     <div
       className={styles.container}
@@ -41,17 +92,10 @@ const LanguageHome = ({ params } : {
       <section
         className={styles.header}
       >
-        <video
+        <div
+          id={'player'}
           className={styles.video}
-          src={'/videos/11856385-uhd_2160_3840_25fps-2.mp4'}
-          poster={'/images/main/001.png'}
-          autoPlay
-          loop
-          muted
-        >{
-          // 비디오 동작 로딩 실패 메세지
-          ''
-        }</video>
+        />
 
         <div
           className={styles['header-contents']}
@@ -99,11 +143,9 @@ const LanguageHome = ({ params } : {
         className={styles.body1}
       >
         {greaterThanLarge ? (
-          <Image
+          <div 
+            ref={mapContainer}
             className={styles['destop-map']}
-            src={`/images/main/map-desktop.png`}
-            alt={''}
-            fill
           />
         ) : (
           <Image
@@ -185,7 +227,7 @@ const LanguageHome = ({ params } : {
                     className={styles['summary-li']}
                     key={`summary_${key}`}
                   >
-                    <li
+                    <div
                       className={styles['summary-first-line']}
                     >
                       <Bold
@@ -198,7 +240,7 @@ const LanguageHome = ({ params } : {
                           'text-[16px] lg:text-[32px]',
                         ]}
                       >{t(`body1.summary.description.${key}.highlight-suffix`)}</Bold>
-                    </li>
+                    </div>
                     <Regular
                       classNames={[
                         'text-[16px] lg:text-[20px]',
