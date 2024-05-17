@@ -27,6 +27,7 @@ const ClearanceBusinessScope = () => {
       <BusinessAccordion
         number={1}
         title={t('body.section-3.description.part-1.title')}
+        initialOpen
       >
         <BusinessSwipeList
           contentObject={JSON.parse(t('body.section-3.description.part-1.description'))}

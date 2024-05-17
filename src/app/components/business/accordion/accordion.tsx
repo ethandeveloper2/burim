@@ -16,18 +16,24 @@ const BusinessAccordion = ({
   number,
   downloadBtn = false,
   downloadBtnText = '',
+  initialOpen = false,
 }: {
   title: string;
   children: ReactNode;
   number?: number;
   downloadBtn?: boolean;
   downloadBtnText?: string;
+  initialOpen?: boolean;
 }) => {
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+
+    if (initialOpen) {
+      setIsOpen(true);
+    }
   }, []);
 
   return (mounted && (

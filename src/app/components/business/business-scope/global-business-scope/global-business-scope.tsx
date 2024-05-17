@@ -29,6 +29,7 @@ const GlobalBusinessScope = () => {
         title={t('body.section-3.description.part-1.title')}
         downloadBtn
         downloadBtnText={t('body.section-3.description.part-1.btn')}
+        initialOpen
       >
         <BusinessSwipeList
           contentObject={JSON.parse(t('body.section-3.description.part-1.description'))}
