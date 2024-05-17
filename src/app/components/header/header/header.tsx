@@ -57,8 +57,8 @@ const Header = () => {
               <Image
                 src={logo}
                 alt={'burim logo'}
-                width={111}
-                height={28}
+                width={155}
+                height={39}
               />
             </Link>
             <div
