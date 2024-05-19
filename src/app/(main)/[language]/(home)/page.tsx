@@ -29,6 +29,7 @@ const LanguageHome = ({ params } : {
   const { greaterThanLarge } = useResponsive();
 
   const [mounted, setMounted] = useState(false);
+  // const [count, setCount] = useState(0);
 
   const summaryObj = JSON.parse(t('body1.summary.description'));
   const summaryKeys = Object.keys(summaryObj).sort((a: string,b: string) => Number(a.at(-1)) - Number(b.at(-1)));
@@ -53,7 +54,6 @@ const LanguageHome = ({ params } : {
   });
 
   useEffect(() => {
-    // TODO: 레이어 추가해서 인터렉션 막기
     // 플레이어 생성
     new window.YT.Player('player', {
       videoId: 'XnZYxOyWD0c',
@@ -61,6 +61,7 @@ const LanguageHome = ({ params } : {
         autoplay: 1, // 자동 재생
         mute : 1, // 음소거
         loop : 1, // 반복재생
+        playlist: 'XnZYxOyWD0c', // 반복재생시 다음 영상
         controls: 0, // 컨트롤 숨김
         rel: 0, // 관련 동영상 표시 안 함
         modestbranding: 1, // 유투브 로고 제거
@@ -95,6 +96,10 @@ const LanguageHome = ({ params } : {
         <div
           id={'player'}
           className={styles.video}
+        />
+        {/* 영상 버튼 비활성을 위한 레이어  */}
+        <div
+          className={styles['video-layer']}
         />
 
         <div
