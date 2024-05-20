@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, CSSProperties } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import lottie from 'lottie-web';
@@ -18,8 +18,9 @@ import Regular from '@Components/common/typo/regular/regular';
 import RoundButton from '@Components/common/buttons/round-button/round-button';
 import LinkCollection from '@Components/main/link-collection/link-collection';
 import CountUpTypo from '@Components/count-up-typo/count-up/count-up';
+import { useInterval } from '@/app/hooks/useInterval';
 
-const LanguageHome = ({ params } : { 
+const LanguageHome = ({ params }: {
   params: {
     language: language;
   }
@@ -30,13 +31,40 @@ const LanguageHome = ({ params } : {
   const { greaterThanLarge } = useResponsive();
 
   const [mounted, setMounted] = useState(false);
+  const [firstHeaderTextOpacity, setFirstHeaderTextOpacity] = useState<number>(0);
+  const [firstHeaderTextTop, setFirstHeaderTextTop] = useState<number>(30);
+  const [secondLeftHeaderTextOpacity, setSecondLeftHeaderTextOpacity] = useState<number>(0);
+  const [secondLeftHeaderTextTop, setSecondLeftHeaderTextTop] = useState<number>(30);
+  const [secondRightHeaderTextOpacity, setSecondRightHeaderTextOpacity] = useState<number>(0);
+  const [secondRightHeaderTextTop, setSecondRightHeaderTextTop] = useState<number>(30);
+  const [headerTextTimer, setHeaderTextTimer] = useState<number | null>(null);
 
   const summaryObj = JSON.parse(t('body1.summary.description'));
-  const summaryKeys = Object.keys(summaryObj).sort((a: string,b: string) => Number(a.at(-1)) - Number(b.at(-1)));
+  const summaryKeys = Object.keys(summaryObj).sort((a: string, b: string) => Number(a.at(-1)) - Number(b.at(-1)));
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (mounted) {
+      setHeaderTextTimer(300);
+    }
+  }, [mounted]);
+
+  useInterval(() => {
+    if (!firstHeaderTextOpacity) {
+      setFirstHeaderTextOpacity(1);
+      setFirstHeaderTextTop(0);
+    } else if (!secondLeftHeaderTextOpacity) {
+      setSecondLeftHeaderTextOpacity(1);
+      setSecondLeftHeaderTextTop(0);
+    } else if (!secondRightHeaderTextOpacity) {
+      setSecondRightHeaderTextOpacity(1);
+      setSecondRightHeaderTextTop(0);
+      setHeaderTextTimer(null);
+    }
+  }, headerTextTimer);
 
   useEffect(() => {
     if (mapContainer.current) {
@@ -60,13 +88,13 @@ const LanguageHome = ({ params } : {
       host: 'https://www.youtube-nocookie.com',
       playerVars: {
         autoplay: 1, // 자동 재생
-        mute : 1, // 음소거
-        loop : 1, // 반복재생
+        mute: 1, // 음소거
+        loop: 1, // 반복재생
         playlist: '_SYFkhPq5A8', // 반복재생시 다음 영상
         controls: 0, // 컨트롤 숨김
         rel: 0, // 관련 동영상 표시 안 함
         modestbranding: 1, // 유투브 로고 제거
-				disablekb: 1, //키보드 컨트롤 비활성,
+        disablekb: 1, //키보드 컨트롤 비활성,
         origin: window.location.host,
       },
       events: {
@@ -106,11 +134,20 @@ const LanguageHome = ({ params } : {
 
         <div
           className={styles['header-contents']}
+          style={{
+            '--first-opacity': firstHeaderTextOpacity,
+            '--first-top': `${firstHeaderTextTop}px`,
+            '--second-left-opacity': secondLeftHeaderTextOpacity,
+            '--second-left-top': `${secondLeftHeaderTextTop}px`,
+            '--second-right-opacity': secondRightHeaderTextOpacity,
+            '--second-right-top': `${secondRightHeaderTextTop}px`,
+          } as CSSProperties | Record<string, any>}
         >
           <Bold
             classNames={[
               'text-[16px] lg:text-[36px]',
               'text-white',
+              styles['first-row']
             ]}
             align={'center'}
           >{'FFT 수,출입 솔루션을 제공하는 부림교역'}</Bold>
@@ -150,7 +187,7 @@ const LanguageHome = ({ params } : {
         className={styles.body1}
       >
         {greaterThanLarge ? (
-          <div 
+          <div
             ref={mapContainer}
             className={styles['destop-map']}
           />
