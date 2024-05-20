@@ -19,6 +19,7 @@ const DesktopLinkCard = ({
   btnText,
   btnClickHandler, 
   isHover = false,
+  isClearance = false,
   ellipsis = false,
 } : {
   title: string;
@@ -28,6 +29,7 @@ const DesktopLinkCard = ({
   btnText: string;
   btnClickHandler?: Function; // href 없는 경우 필요
   isHover?: boolean;
+  isClearance?: boolean;
   ellipsis?: boolean;
 }) => {
   const [mounted, setMounted] = useState(false);
@@ -47,7 +49,7 @@ const DesktopLinkCard = ({
         fill
       />
 
-      {isHover && (
+      {isClearance && isHover && (
         <Image
           className={styles['hover-icon']}
           src={markIcon}
@@ -66,48 +68,50 @@ const DesktopLinkCard = ({
             'text-white',
           ]}
         >{title}</Bold>
-        <Regular
-          classNames={[
-            'text-[25px]',
-            'text-white',
-            ellipsis && !isHover ? 'ellipsis' : '',
-          ]}
-          mb={20.5}
-        >{description}</Regular>
 
         {isHover && (
-          <Link
-            href={href}
-            scroll={!!btnClickHandler ? false : true}
-            onClick={() => {
-              if (btnClickHandler) {
-                btnClickHandler();
-              }
-            }}
-          >
-            <RoundButton
-              bgColor={'white'}
-              px={32}
-              py={16}
+          <>
+            <Regular
+              classNames={[
+                'text-[25px]',
+                'text-white',
+                ellipsis && !isHover ? 'ellipsis' : '',
+              ]}
+              mb={20.5}
+            >{description}</Regular>
+            <Link
+              href={href}
+              scroll={!!btnClickHandler ? false : true}
+              onClick={() => {
+                if (btnClickHandler) {
+                  btnClickHandler();
+                }
+              }}
             >
-              <div
-                className={styles.row}
+              <RoundButton
+                bgColor={'white'}
+                px={32}
+                py={16}
               >
-                <Regular
-                  classNames={[
-                    'text-[20px]',
-                  ]}
-                  mr={20}
-                >{btnText}</Regular>
-                <Image
-                  src={arrowIcon}
-                  alt={''}
-                  width={16}
-                  height={16}
-                />
-              </div>
-            </RoundButton>
-          </Link>
+                <div
+                  className={styles.row}
+                >
+                  <Regular
+                    classNames={[
+                      'text-[20px]',
+                    ]}
+                    mr={20}
+                  >{btnText}</Regular>
+                  <Image
+                    src={arrowIcon}
+                    alt={''}
+                    width={16}
+                    height={16}
+                  />
+                </div>
+              </RoundButton>
+            </Link>
+          </>
         )}
       </div>
     </div>

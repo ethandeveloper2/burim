@@ -47,6 +47,7 @@ const LinkCollection = () => {
             >
               <DesktopLinkCard
                 isHover={hover}
+                isClearance={!idx}
                 ellipsis={hoverStates.includes(true)}
                 src={`/images/main/${idx + 1}.png`}
                 title={t(`links.${idx + 1}.title`)}
