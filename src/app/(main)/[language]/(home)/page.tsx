@@ -17,6 +17,7 @@ import Medium from '@Components/common/typo/medium/medium';
 import Regular from '@Components/common/typo/regular/regular';
 import RoundButton from '@Components/common/buttons/round-button/round-button';
 import LinkCollection from '@Components/main/link-collection/link-collection';
+import CountUpTypo from '@Components/count-up-typo/count-up/count-up';
 
 const LanguageHome = ({ params } : { 
   params: {
@@ -29,7 +30,6 @@ const LanguageHome = ({ params } : {
   const { greaterThanLarge } = useResponsive();
 
   const [mounted, setMounted] = useState(false);
-  // const [count, setCount] = useState(0);
 
   const summaryObj = JSON.parse(t('body1.summary.description'));
   const summaryKeys = Object.keys(summaryObj).sort((a: string,b: string) => Number(a.at(-1)) - Number(b.at(-1)));
@@ -235,11 +235,13 @@ const LanguageHome = ({ params } : {
                     <div
                       className={styles['summary-first-line']}
                     >
-                      <Bold
+                      <CountUpTypo
+                        typoType={'bold'}
+                        end={Number(t(`body1.summary.description.${key}.highlight`).replace(/\D+/g, ''))}
                         classNames={[
                           'text-[28px] lg:text-[59px]',
                         ]}
-                      >{t(`body1.summary.description.${key}.highlight`)}</Bold>
+                      />
                       <Bold
                         classNames={[
                           'text-[16px] lg:text-[32px]',
