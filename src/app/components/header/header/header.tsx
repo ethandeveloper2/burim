@@ -71,6 +71,7 @@ const Header = () => {
                   return (
                     <div
                       key={`header_menu_${menu}`}
+                      className={styles['menu-btn']}
                       onMouseOver={() => {
                         setIsOpen(true);
                         setHoverMenuKey(menu);
