@@ -57,6 +57,7 @@ const LanguageHome = ({ params } : {
     // 플레이어 생성
     new window.YT.Player('player', {
       videoId: '_SYFkhPq5A8',
+      host: 'https://www.youtube-nocookie.com',
       playerVars: {
         autoplay: 1, // 자동 재생
         mute : 1, // 음소거
@@ -65,7 +66,8 @@ const LanguageHome = ({ params } : {
         controls: 0, // 컨트롤 숨김
         rel: 0, // 관련 동영상 표시 안 함
         modestbranding: 1, // 유투브 로고 제거
-				disablekb: 1, //키보드 컨트롤 비활성
+				disablekb: 1, //키보드 컨트롤 비활성,
+        origin: window.location.host,
       },
       events: {
         'onReady': onPlayerReady,
