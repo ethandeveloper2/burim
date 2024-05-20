@@ -26,7 +26,7 @@ const Regular = ({
       styles.container,
       ...classNames,
     ].join(' ');
-  }, [classNames, align]);
+  }, [classNames]);
 
   return (
     <p

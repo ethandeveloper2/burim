@@ -26,7 +26,7 @@ const Bold = ({
       styles.container,
       ...classNames,
     ].join(' ');
-  }, [classNames, align]);
+  }, [classNames]);
 
   return (
     <p
