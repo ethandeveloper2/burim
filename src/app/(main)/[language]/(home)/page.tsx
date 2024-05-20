@@ -258,14 +258,14 @@ const LanguageHome = ({ params }: {
           >
             <Bold
               classNames={[
-                'text-[20px] lg:text-[32px]',
+                'text-[20px] lg:text-[30px]',
               ]}
               mb={8}
             >{t('body1.summary.title')}</Bold>
             <ul
               className={styles['summary-ul']}
             >
-              {summaryKeys.map((key) => {
+              {summaryKeys.map((key, idx) => {
                 return (
                   <li
                     className={styles['summary-li']}
@@ -276,14 +276,16 @@ const LanguageHome = ({ params }: {
                     >
                       <CountUpTypo
                         typoType={'bold'}
+                        duration={idx+1}
                         end={Number(t(`body1.summary.description.${key}.highlight`).replace(/\D+/g, ''))}
                         classNames={[
-                          'text-[28px] lg:text-[59px]',
+                          'text-[28px] lg:text-[48px]',
+                          styles.count,
                         ]}
                       />
                       <Bold
                         classNames={[
-                          'text-[16px] lg:text-[32px]',
+                          'text-[16px] lg:text-[30px]',
                         ]}
                       >{t(`body1.summary.description.${key}.highlight-suffix`)}</Bold>
                     </div>

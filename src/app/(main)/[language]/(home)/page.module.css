@@ -168,7 +168,6 @@
           & .summary-li {
             width: calc(100%/2);
 
-
             @media (min-width: 1300px) {
               flex: auto;
               width: auto;
@@ -178,7 +177,18 @@
               display: flex;
               justify-content: center;
               align-items: baseline;
+              padding: 0 16px;
+
+              & .count {
+                width: 140px;
+                margin-right: 4px;
+                text-align: right;
+              }
             }
+          }
+
+          & .summary-li:last-child .summary-first-line .count {
+            width: 190px;
           }
 
           & .summary-li:nth-child(2n-1) {
