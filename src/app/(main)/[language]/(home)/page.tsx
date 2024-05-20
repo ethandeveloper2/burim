@@ -56,12 +56,12 @@ const LanguageHome = ({ params } : {
   useEffect(() => {
     // 플레이어 생성
     new window.YT.Player('player', {
-      videoId: 'XnZYxOyWD0c',
+      videoId: '_SYFkhPq5A8',
       playerVars: {
         autoplay: 1, // 자동 재생
         mute : 1, // 음소거
         loop : 1, // 반복재생
-        playlist: 'XnZYxOyWD0c', // 반복재생시 다음 영상
+        playlist: '_SYFkhPq5A8', // 반복재생시 다음 영상
         controls: 0, // 컨트롤 숨김
         rel: 0, // 관련 동영상 표시 안 함
         modestbranding: 1, // 유투브 로고 제거
