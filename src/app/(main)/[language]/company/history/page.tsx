@@ -101,7 +101,7 @@ const HistoryPage = ({ params } : {
                       'text-[12px] lg:text-[24px]',
                       'text-white',
                     ]}
-                    align={'start'}
+                    align={'end'}
                   >{historyObj[sectionKey].description}</Regular>
                 </div>
               </div>
@@ -123,6 +123,7 @@ const HistoryPage = ({ params } : {
                       <Medium
                         classNames={[
                           'text-[24px] lg:text-[32px]',
+                          styles.year,
                         ]}
                       >{yearKey}</Medium>
                       <ul

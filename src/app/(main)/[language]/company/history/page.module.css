@@ -107,7 +107,6 @@
       }
 
       .section-body {
-        /* background-color: red; */
         display: flex;
         flex-direction: column;
         align-items: baseline;
@@ -121,7 +120,6 @@
         }
 
         .year-row {
-          /* background-color: mediumpurple; */
           position: relative;
           display: flex;
           flex-direction: column;
@@ -149,6 +147,15 @@
             }
           } */
 
+          & .year {
+            flex-shrink: 0;
+            width: 86px;
+
+            @media (min-width: 1300px) {
+              width: 137px;
+            }
+          }
+
           .month-details {
             display: flex;
             flex-direction: column;
@@ -159,11 +166,12 @@
             }
 
             .month-row > p:first-child {
-              width: 38px;
+              flex-shrink: 0;
+              width: 60px;
               margin-right: 4px;
 
               @media (min-width: 1300px) {
-                width: 60px;
+                width: 120px;
                 margin-right: 32px;
               }
             }
