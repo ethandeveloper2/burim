@@ -2,19 +2,14 @@
   .header {
     position: relative;
     width: 100%;
-    /* height: 700px; */
-    height: calc(100vw / 1.8);
-    max-height: 700px;
+    height: 700px;
 
     @media (min-width: 1300px) {
       height: 963px;
     }
 
-    .video {
-      /* width: 100%;
-      height: 100%;
-      object-fit: cover; */
-      z-index: -1;
+    .video :global(video) {
+      max-width: none !important;
     }
 
     .header-contents {
