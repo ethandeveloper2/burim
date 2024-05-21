@@ -176,13 +176,13 @@ const LanguageHome = ({ params }: {
           >
             <Medium
               classNames={[
-                'text-[16px] lg:text-[24px]',
+                'text-[16px] lg:text-[20px]',
                 'text-green-1',
               ]}
             >{t('body1.title.sub')}</Medium>
             <Bold
               classNames={[
-                'text-[32px] lg:text-[40px]',
+                'text-[32px] lg:text-[38px]',
               ]}
             >{t('body1.title.main')}</Bold>
             <Regular
@@ -198,8 +198,8 @@ const LanguageHome = ({ params }: {
             >
               <RoundButton
                 bgColor={'green'}
-                px={32}
-                py={16}
+                px={greaterThanLarge ? 24 : 16}
+                py={greaterThanLarge ? 15 : 9}
               >
                 <div
                   className={styles.row}
@@ -226,7 +226,7 @@ const LanguageHome = ({ params }: {
           >
             <Bold
               classNames={[
-                'text-[20px] lg:text-[30px]',
+                'text-[20px] lg:text-[28px]',
               ]}
               mb={8}
             >{t('body1.summary.title')}</Bold>
@@ -247,19 +247,19 @@ const LanguageHome = ({ params }: {
                         duration={idx+1}
                         end={Number(t(`body1.summary.description.${key}.highlight`).replace(/\D+/g, ''))}
                         classNames={[
-                          'text-[28px] lg:text-[48px]',
+                          'text-[20px] lg:text-[48px]',
                           styles.count,
                         ]}
                       />
                       <Bold
                         classNames={[
-                          'text-[16px] lg:text-[30px]',
+                          'text-[12px] lg:text-[30px]',
                         ]}
                       >{t(`body1.summary.description.${key}.highlight-suffix`)}</Bold>
                     </div>
                     <Regular
                       classNames={[
-                        'text-[16px] lg:text-[20px]',
+                        'text-[12px] lg:text-[18px]',
                       ]}
                       align={'center'}
                     >{t(`body1.summary.description.${key}.explan`)}</Regular>

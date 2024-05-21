@@ -167,26 +167,34 @@
               justify-content: center;
               align-items: baseline;
               padding: 0 16px;
-
+              
               & .count {
-                width: 140px;
+                width: 55px;
                 margin-right: 4px;
                 text-align: right;
+
+                @media (min-width: 1300px) {
+                  width: 140px;
+                }
               }
             }
           }
 
           & .summary-li:last-child .summary-first-line .count {
-            width: 190px;
+            width: 80px;
+
+            @media (min-width: 1300px) {
+              width: 190px;
+            }
           }
 
           & .summary-li:nth-child(2n-1) {
-            border-right: 1px solid theme('colors.grey.200');
+            border-right: 1px solid theme('colors.grey.300');
           }
 
           & .summary-li:nth-child(2) {
             @media (min-width: 1300px) {
-              border-right: 1px solid theme('colors.grey.200');
+              border-right: 1px solid theme('colors.grey.300');
             }
           }
         }

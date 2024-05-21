@@ -64,7 +64,7 @@ const DesktopLinkCard = ({
       >
         <Bold
           classNames={[
-            'text-[48px]',
+            'text-[40px]',
             'text-white',
           ]}
         >{title}</Bold>
