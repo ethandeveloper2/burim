@@ -20,3 +20,5 @@ export const links: {
     '2': '/recruit/process',
   },
 }
+
+export const languageList = ['KO', 'EN'];

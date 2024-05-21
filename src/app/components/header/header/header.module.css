@@ -33,7 +33,39 @@
       }
 
       .language {
+        position: relative;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+
+        & .arrow {
+          transition: transform 0.2s;
+        }
+
+        & .arrow-open {
+          transform: rotate(-180deg);
+        }
+
+        & .dropdown-menus {
+          position: absolute;
+          top: 110%;
+          right: -30%;
+          background-color: theme('colors.grey.50');
+          z-index: 10;
+
+          & .dropdown-menu {
+            width: 80px;
+            padding: 10px 20px;
+            margin-bottom: 2px;
+          }
+
+          & .dropdown-menu:hover {
+            background-color: theme('colors.grey.200');
+            margin-bottom: 2px;
+            border-radius: 5px;
+          }
+        }
       }
     }
   }
