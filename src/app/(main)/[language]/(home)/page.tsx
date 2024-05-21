@@ -4,11 +4,13 @@ import { useState, useEffect, useRef, CSSProperties } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import lottie from 'lottie-web';
+import 'youtube-background';
 
 import styles from './page.module.css';
 import { language } from '@Types/type'
 import useTranslate from '@Hooks/useTranslate';
 import useResponsive from '@Hooks/useResponsive';
+import { useInterval } from '@Hooks/useInterval';
 import burimTypoImage from '@Public/images/main/burim.png';
 import arrowIcon from '@Public/icons/arrow/right-white.svg';
 import ContactUsPage from '@/app/(main)/[language]/contact/page';
@@ -18,7 +20,6 @@ import Regular from '@Components/common/typo/regular/regular';
 import RoundButton from '@Components/common/buttons/round-button/round-button';
 import LinkCollection from '@Components/main/link-collection/link-collection';
 import CountUpTypo from '@Components/count-up-typo/count-up/count-up';
-import { useInterval } from '@/app/hooks/useInterval';
 
 const LanguageHome = ({ params }: {
   params: {
@@ -82,39 +83,10 @@ const LanguageHome = ({ params }: {
   });
 
   useEffect(() => {
-    // 플레이어 생성
-    new window.YT.Player('player', {
-      videoId: '_SYFkhPq5A8',
-      host: 'https://www.youtube-nocookie.com',
-      playerVars: {
-        autoplay: 1, // 자동 재생
-        mute: 1, // 음소거
-        loop: 1, // 반복재생
-        playlist: '_SYFkhPq5A8', // 반복재생시 다음 영상
-        controls: 0, // 컨트롤 숨김
-        rel: 0, // 관련 동영상 표시 안 함
-        modestbranding: 1, // 유투브 로고 제거
-        disablekb: 1, //키보드 컨트롤 비활성,
-        origin: window.location.host,
-      },
-      events: {
-        'onReady': onPlayerReady,
-        'onStateChange': onPlayerStateChange,
-      }
-    });
-  });
-
-  const onPlayerReady = (event: any) => {
-    event.target.mute();
-    event.target.playVideo();
-  }
-
-  const onPlayerStateChange = (event: any) => {
-    // 반복재생
-    if (event.data == window.YT.PlayerState.ENDED) {
-      event.target.playVideo();
+    if (window.VideoBackgrounds) {
+      new window.VideoBackgrounds('[data-vbg]');
     }
-  }
+  }, [mounted]);
 
   return (mounted && (
     <div
@@ -124,12 +96,8 @@ const LanguageHome = ({ params }: {
         className={styles.header}
       >
         <div
-          id={'player'}
           className={styles.video}
-        />
-        {/* 영상 버튼 비활성을 위한 레이어  */}
-        <div
-          className={styles['video-layer']}
+          data-vbg={'https://www.youtube.com/watch?v=FJyxYf3UH6A'}
         />
 
         <div

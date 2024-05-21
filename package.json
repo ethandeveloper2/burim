@@ -17,7 +17,8 @@
     "react-countup": "^6.5.3",
     "react-dom": "^18",
     "react-responsive": "^10.0.0",
-    "swiper": "^11.1.1"
+    "swiper": "^11.1.1",
+    "youtube-background": "^1.1.7"
   },
   "devDependencies": {
     "@types/node": "^20",
