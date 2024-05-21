@@ -20,29 +20,33 @@ const KakaoMap = ({
 
   useEffect(() => {
     setMounted(true);
+  }, []);
 
-    // 카카오 지도 로드 후 지도 생성
-    const kakao = window.kakao;
-
-    if (kakao) {
-      kakao.maps.load(() => {
-        // 지도 생성
-        const map = new kakao.maps.Map(mapEl.current, {
-          center: new kakao.maps.LatLng(centerY, centerX),
-          mapTypeId : kakao.maps.MapTypeId.ROADMAP,
-          // level: 6,
-          // angle: 80,
-          // rotation: 1.7
-        }); 
-    
-        // 마커 생성
-        const marker = new kakao.maps.Marker({
-            position: new kakao.maps.LatLng(markerY ? markerY : centerY, markerX ? markerX : centerX),
-            map: map,
+  useEffect(() => {
+    if (mounted) {
+      // 카카오 지도 로드 후 지도 생성
+      const kakao = window.kakao;
+  
+      if (kakao) {
+        kakao.maps.load(() => {
+          // 지도 생성
+          const map = new kakao.maps.Map(mapEl.current, {
+            center: new kakao.maps.LatLng(centerY, centerX),
+            mapTypeId : kakao.maps.MapTypeId.ROADMAP,
+            // level: 6,
+            // angle: 80,
+            // rotation: 1.7
+          }); 
+      
+          // 마커 생성
+          const marker = new kakao.maps.Marker({
+              position: new kakao.maps.LatLng(markerY ? markerY : centerY, markerX ? markerX : centerX),
+              map: map,
+          });
         });
-      });
+      }
     }
-  }, [centerY, centerX, markerY, markerX]);
+  }, [mounted, centerY, centerX, markerY, markerX]);
 
   return (mounted && (
     <div
