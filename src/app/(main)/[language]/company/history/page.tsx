@@ -98,9 +98,10 @@ const HistoryPage = ({ params } : {
                   >{historyObj[sectionKey].title}</Bold>
                   <Bold
                     classNames={[
-                      'text-[16px] lg:text-[24px]',
+                      'text-[15px] lg:text-[24px]',
                       'text-white',
                     ]}
+                    align={'end'}
                   >{historyObj[sectionKey].description}</Bold>
                 </div>
               </div>
