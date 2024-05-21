@@ -48,7 +48,7 @@ const BurimValuesSchema = () => {
         >
           <Image
             className={styles.schema}
-            src={`/images/company/values/${languageParam}-${greaterThanLarge ? 'desktop' : 'mobile'}-1.png`}
+            src={`/images/company/values/${greaterThanLarge ? 'desktop' : 'mobile'}-1.png`}
             alt={''}
             width={1140}
             height={417}

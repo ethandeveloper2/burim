@@ -1,0 +1,86 @@
+{
+  "header": {
+    "titles": {
+      "sub": "Company",
+      "main": "Burim, History"
+    },
+    "explain": {
+      "1": "Established in 1994, Burim Trading started with quarantine operations and has since expanded into integrated services including quarantine, customs clearance, legal review with the KFDA (Korea Food and Drug Administration), storage, transportation, and exportation, growing into a company that provides comprehensive services essential for global trade today.",
+      "2": "In particular, since the year 2000, we have differentiated itself by providing FFT (Focus & Fast Track) services with a customer-centric approach, thereby contributing to customer satisfaction and fostering mutual growth with customers.",
+      "3": "Making customer satisfaction a key business objective, our passionate pursuit of challenges for customer growth continues today."
+    }
+  },
+  "body": {
+    "1": {
+      "title": "~ Year . 2000",
+      "description": "사업기반 구축",
+      "contents": {
+        "Year . 1994": {
+          "7(July)": "Establishment of Burim trading company"
+        }
+      }
+    },
+    "2": {
+      "title": "Year . 2001 ~ Year . 2010",
+      "description": "사업 안정화",
+      "contents": {
+        "Year . 2010": {
+          "1(Jan)": "move to head office to Bumildong Doosan wave Poseidon"
+        },
+        "Year . 2007": {
+          "7(July)": "Registration as an importer of health functional foods"
+        },
+        "Year . 2003": {
+          "1(Jan)": "Conversion of Burim trading to a corporation ",
+          "10(Oct)": "Registration as a Food import agency by KFDA"
+        }
+      }
+    },
+    "3": {
+      "title": "Year . 2011 ~ Year . 2020",
+      "description": "종합 물류 회사로 도약",
+      "contents": {
+        "Year . 2020": {
+          "12(Dec)": "Prime Minister’s Award for achieving USD 3 million in exports on Trade Day in Korea"
+        },
+        "Year . 2019": {
+          "09(Sep)": "Customs-designated bonded transportation operator"
+        },
+        "Year . 2018": {
+          "10(Oct)": "Obtaining a license for bonded transportation\nAcquisition of a license for freight truck transportation business",
+          "11(Nov)": "Registration as a plant quarantine agent (issued by the Korea Animal and Plant Quarantine department)"
+        },
+        "Year . 2016": {
+          "1(Jan)": "The commencement of fresh agricultural produce exports.",
+          "6(June)": "Office relocation to Burim Building, Choryang-dong, Busan Station.",
+          "11(Nov)": "Prime Minister's Award for achieving $1 million in exports on Trade Day in Korea."
+        },
+        "Year . 2014": {
+          "4(April)": "Expansion of the Busan Newport branch office",
+          "12(Dec)": "Commencement of Food and general items export"
+        },
+        "Year . 2012": {
+          "7(July)": "Registration for license as a food import declaration agent"
+        }
+      }
+    },
+    "4": {
+      "title": "Year . 2021 ~",
+      "description": "",
+      "contents": {
+        " Year . 2023": {
+          "2(FEB)": "Acquisition of a patent for a bonded zone.",
+          "3(March)": "Obtaining a food storage business license (KFDA, Busan branch) ",
+          "4(April)": "Obtaining a quarantine station permit and establishing\nMove to head office to Boo IoT Logistic center(Busan Newport location)",
+          "12(Dec)": "Acquisition of a free trade zone license"
+        },
+        "Year . 2022": {
+          "12(Dec)": "Completion of the construction of the logistics center  : Boo IoT logistic center Busan Newport branch"
+        },
+        "Year . 2021": {
+          "12(Dec)": "Commencement of construction for the logistics center."
+        }
+      }
+    }
+  }
+}

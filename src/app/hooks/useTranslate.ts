@@ -1,12 +1,12 @@
 import { language } from '@Types/type';
 import koJsons from '@Locales/ko/index';
-import EnJsons from '@Locales/ko/index';
+import enJsons from '@Locales/en/index';
 
 const useTranslate = (fileKeys: string, languageCode: language) => {
-  let codeFile = koJsons;
+  let codeFile: any = koJsons;
 
   if (languageCode === 'en') {
-    codeFile = EnJsons;
+    codeFile = enJsons;
   }
 
   const findJsonFile = (keys: string) => {

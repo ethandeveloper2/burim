@@ -1,0 +1,95 @@
+{
+  "title": {
+    "first-line": "Business",
+    "second-line": "Logistics"
+  },
+  "explain": "Welcome to our department,\nThis department is broadly classified into 2 main categories.",
+  "body": {
+    "section-1": {
+      "part-1": {
+        "title": "01 Storage service",
+        "description": "Boo IoT Logistic Center is a bonded warehouse. It operates automated rooms, general rooms, cold storage (refrigerated and frozen), humidity-controlled rooms, and fresh-specialized rooms. It strictly adheres to Cold-Chain management from the moment the cargo enters."
+      },
+      "part-2": {
+        "title": "02 Transportation service",
+        "description": "We provide bonded and general transportation services. We transport goods at Container , low temperature (refrigerated, frozen), and special cargo. We offer responsible delivery services including 24 hours monitoring service, quick dispatch, and adherence to delivery schedules based on an online platform or application."
+      }
+    },
+    "section-2": {
+      "title": "At a glance (Annually)",
+      "description": {
+        "part-1": {
+          "title": "Sorting, labeling etc (special operations)",
+          "highlight": "2,000",
+          "highlight-suffix": "TEU"
+        },
+        "part-2": {
+          "title": "The daily storage capacity ",
+          "highlight": "150,000",
+          "highlight-suffix": "M/T"
+        },
+        "part-3": {
+          "title": "Urgent dispatch rate",
+          "highlight": "95",
+          "highlight-suffix": "%"
+        },
+        "part-4": {
+          "title": "Number of transportation",
+          "highlight": "10,000",
+          "highlight-suffix": "TEU"
+        }
+      }
+    },
+    "section-3": {
+      "title": "Storage service",
+      "description": {
+        "part-1": {
+          "title": "보관",
+          "description": {
+            "1" : {
+              "first-line": "IoT automatic room",
+              "second-line": ""
+            },
+            "2" : {
+              "first-line": "일반실",
+              "second-line": ""
+            },
+            "3" : {
+              "first-line": "Humidity & Temperature control room",
+              "second-line": ""
+            },
+            "4" : {
+              "first-line": "Refrigerated & Frozen Room",
+              "second-line": ""
+            },
+            "5" : {
+              "first-line": "Extra work",
+              "second-line": "(sorting, labeling etc)"
+            }
+          }
+        },
+        "part-2": {
+          "title": "Transportation service",
+          "description": {
+            "1" : {
+              "first-line": "Refrigerated & Frozen cargo",
+              "second-line": ""
+            },
+            "2" : {
+              "first-line": "Container",
+              "second-line": "(HQ)"
+            },
+            "3" : {
+              "first-line": "Wing body truck",
+              "second-line": ""
+            },
+            "4" : {
+              "first-line": "Rail transportation",
+              "second-line": ""
+            }
+          }
+        }
+      }
+    }
+  }
+}

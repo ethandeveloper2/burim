@@ -1,0 +1,116 @@
+{
+  "title": {
+    "first-line": "Business",
+    "second-line": "Global market"
+  },
+  "explain": "Welcome to our department,\nThis department is broadly classified into 2 main categories.",
+  "body": {
+    "section-1": {
+      "part-1": {
+        "title": "01 Fresh food team",
+        "description": "We are responsible for the direct export or third-country trade of fresh produce such as vegetables, fruits, and meat products. To ensure excellent quality, we have specialized personnel both domestically and internationally at every stage from cultivation to production, and we have established quality branding to lead the market in exporting fresh produce"
+      },
+      "part-2": {
+        "title": "02 Processed food and industrial goods",
+        "description": "We export 400 items of processed food (including OEM products) and 150 items of industrial goods through a B2B trading method. We are expanding our target countries by developing customized products tailored to local market demands. Efforts are underway to enhance Burim's brand reputation in the global market."
+      }
+    },
+    "section-2": {
+      "title": "At a glance (Annually)",
+      "description": {
+        "part-1": {
+          "title": "PB brand",
+          "highlight": "",
+          "highlight-suffix": ""
+        },
+        "part-2": {
+          "title": "Number of countries",
+          "highlight": "10",
+          "highlight-suffix": "countries"
+        },
+        "part-3": {
+          "title": "Number of Item export",
+          "highlight": "500+",
+          "highlight-suffix": "items"
+        },
+        "part-4": {
+          "title": "Volume of export",
+          "highlight": "800",
+          "highlight-suffix": "TEU"
+        }
+      }
+    },
+    "section-3": {
+      "title": "At a glance",
+      "description": {
+        "part-1": {
+          "title": "Fresh category",
+          "btn": "Download",
+          "description": {
+            "1" : {
+              "first-line": "Fruits ",
+              "second-line": " "
+            },
+            "2" : {
+              "first-line": "Vegetable",
+              "second-line": " "
+            },
+            "3" : {
+              "first-line": "Meat",
+              "second-line": "(Beef & Pork)"
+            }
+          }
+        },
+        "part-2": {
+          "title": "Processed food category",
+          "btn": "Download",
+          "description": {
+            "1" : {
+              "first-line": "Instant meal",
+              "second-line": ""
+            },
+            "2" : {
+              "first-line": "Meal kits & Convenience meal",
+              "second-line": ""
+            },
+            "3" : {
+              "first-line": "Seaweed",
+              "second-line": ""
+            },
+            "4" : {
+              "first-line": "Snack",
+              "second-line": "(biscuit, cookie etc)"
+            },
+            "5" : {
+              "first-line": "drink",
+              "second-line": ""
+            }
+          }
+        },
+        "part-3": {
+          "title": "Industrial goods",
+          "btn": "Download",
+          "description": {
+            "1" : {
+              "first-line": "Beauty item",
+              "second-line": "(Cosmetics)"
+            },
+            "2" : {
+              "first-line": "Life goods",
+              "second-line": ""
+
+            },
+            "3" : {
+              "first-line": "Toy",
+              "second-line": ""
+            },
+            "4" : {
+              "first-line": "DIY",
+              "second-line": "(furniture)"
+            }
+          }
+        }
+      }
+    }
+  }
+}

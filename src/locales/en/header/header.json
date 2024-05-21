@@ -1,0 +1,20 @@
+{
+  "COMPANY" : {
+    "1": "History",
+    "2": "Management Policy",
+    "3": "FFT Service",
+    "4": "Location"
+  },
+  "BUSINESS" : {
+    "1": "Quarantine & Customs clearance",
+    "2": "Logistics",
+    "3": "Global market"
+  },
+  "CONTACT US" : {
+    "1": "Inquiries"
+  },
+  "RECRUIT" : {
+    "1": "Recruitment",
+    "2": "Recruitment process"
+  }
+}

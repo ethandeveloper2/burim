@@ -1,0 +1,57 @@
+{
+  "body1": {
+    "title": {
+        "sub": "About our company, Burim",
+        "main": "Since 1994,"
+    },
+    "description": "We are specializes in providing the full packaged service for Import & Export in Korea, such as quarantine, customs clearance, documentation review(KFDA legal review), storage, and transportation.",
+    "btn": "Learn more",
+    "summary": {
+      "title": "Annually :",
+      "description": {
+        "part-1": {
+          "highlight": "5,500",
+          "highlight-suffix": "case",
+          "explan": "B/L report"
+        },
+        "part-2": {
+          "highlight": "7,500",
+          "highlight-suffix": "case",
+          "explan": "Quarantine report"
+        },
+        "part-3": {
+          "highlight": "9,500",
+          "highlight-suffix": "TEU",
+          "explan": "Domestic delivery"
+        },
+        "part-4": {
+          "highlight": "150,000",
+          "highlight-suffix": "M/T",
+          "explan": "Daily capacity for Bonded warehouse"
+        }
+      }
+    }
+  },
+  "links": {
+    "1": {
+      "title": "Quarantine & Customs clearance",
+      "description": "Proposing the best solution for importing, ensuring safety and value by reviewing domestic regulations on imported goods in advance.",
+      "link": "Learn more"
+    },
+    "2": {
+      "title": "Logistic",
+      "description": "providing safe storage and responsible transportation for items requiring temperature and humidity control, refrigeration, freezing, or ambient temperature",
+      "link": "Learn more"
+    },
+    "3": {
+      "title": "Global market",
+      "description": "Creating value in the global market by exporting competitively processed food items, fresh products, and manufactured goods, including direct exports or trade with third countries",
+      "link": "Learn more"
+    },
+    "4": {
+      "title": "R&D business",
+      "description": "Aim to foster innovation by applying advanced global technology to our existing business and seek sustainable growth by exploring new industries.​",
+      "link": "Learn more"
+    }
+  }
+}

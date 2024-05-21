@@ -1,0 +1,128 @@
+{
+  "title": {
+    "first-line": "Business",
+    "second-line": "Quarantine & Customs clearance"
+  },
+  "explain": "Welcome to our department,\nThis department is broadly classified into 2 main categories.",
+  "body": {
+    "section-1": {
+      "part-1": {
+        "title": "01 Quarantine division",
+        "description": "We conduct a prior review of domestic regulations on imported goods to ensure that our clients can safely import their items. We provide regulatory reviews (including Korean labeling) and offer alternatives."
+      },
+      "part-2": {
+        "title": "02 Customs clearance division",
+        "description": "We act on behalf of our clients to handle the domestic procedures of relevant local agencies swiftly during the import process, thereby expediting the import procedures and saving our clients time\nAdditionally, we are responsible for identifying potential risks in the import process beforehand to prevent economic losses for our clients."
+      }
+    },
+    "section-2": {
+      "title": "At a glance (Annually)",
+      "description": {
+        "part-1": {
+          "title": "Number of import consulting countries",
+          "highlight": "80",
+          "highlight-suffix": "countries"
+        },
+        "part-2": {
+          "title": "Regulation and Korean labeling",
+          "highlight": "4,500",
+          "highlight-suffix": "case"
+        },
+        "part-3": {
+          "title": "B/L report",
+          "highlight": "5,500",
+          "highlight-suffix": "case"
+        },
+        "part-4": {
+          "title": "Quarantine report",
+          "highlight": "8,000",
+          "highlight-suffix": "case"
+        }
+      }
+    },
+    "section-3": {
+      "title": "At a glance",
+      "description": {
+        "part-1": {
+          "title": "Food",
+          "description": {
+            "1" : {
+              "first-line": "Processed food",
+              "second-line": " "
+            },
+            "2" : {
+              "first-line": "Meat, seafood",
+              "second-line": " "
+            },
+            "3" : {
+              "first-line": "Fresh products",
+              "second-line": " "
+            },
+            "4" : {
+              "first-line": "material’s item",
+              "second-line": "(grain, coffee bean etc)"
+            },
+            "5" : {
+              "first-line": "labeling",
+              "second-line": " "
+            }
+          }
+        },
+        "part-2": {
+          "title": "Bio",
+          "description": {
+            "1" : {
+              "first-line": "Medical Bio",
+              "second-line": "(Red Bio)"
+            },
+            "2" : {
+              "first-line": "Health functional food",
+              "second-line": " "
+            },
+            "3" : {
+              "first-line": "Medical devices",
+              "second-line": " "
+            },
+            "4" : {
+              "first-line": "Eco-fetilizers",
+              "second-line": "(Green Bio)"
+            },
+            "5" : {
+              "first-line": "Chemicals",
+              "second-line": "(White Bio)"
+            },
+            "6" : {
+              "first-line": "labeling",
+              "second-line": " "
+            }
+          }
+        },
+        "part-3": {
+          "title": "Industrial category",
+          "description": {
+            "1" : {
+              "first-line": "Battery",
+              "second-line": "(Car, devices)"
+            },
+            "2" : {
+              "first-line": "Cosmetic",
+              "second-line": " "
+            },
+            "3" : {
+              "first-line": "DIY, material, Furniture",
+              "second-line": " "
+            },
+            "4" : {
+              "first-line": "Steel industry",
+              "second-line": " "
+            },
+            "5" : {
+              "first-line": "labeling",
+              "second-line": " "
+            }
+          }
+        }
+      }
+    }
+  }
+}

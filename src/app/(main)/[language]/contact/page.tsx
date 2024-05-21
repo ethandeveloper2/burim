@@ -222,7 +222,7 @@ const ContactUsPage = () => {
                 'text-white',
               ]}
               align={'center'}
-            >{`문의하기`}</Regular>
+            >{t('body.button')}</Regular>
           </RoundButton>
         </div>
       </div>

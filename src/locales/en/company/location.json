@@ -1,0 +1,22 @@
+{
+  "header": {
+    "titles": {
+      "sub": "Company",
+      "main": "Location"
+    }
+  },
+  "body": {
+    "1": {
+      "Address": "Boo IoT logistic center, Bumbang 3ro-30bungil 12, Gangseo gu Busan City, Republic of Korea 46727",
+      "Tel": {
+        "대표": "051-469-1222"
+      }
+    },
+    "2": {
+      "Address": "부산광역시 동구 고관로 46, 5층 (초량동, 부림빌딩)\n* 부산지하철 1호선 초량역 9번출구에서 약 100m (경남여자중학교 맞은편)",
+      "Tel": {
+        "대표": "051-469-1222"
+      }
+    }
+  }
+}

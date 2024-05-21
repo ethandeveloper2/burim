@@ -1,0 +1,38 @@
+{
+  "header": {
+    "titles": {
+      "sub": "Company",
+      "main": "Management Policy"
+    },
+    "explain": {
+      "1": "Burim Trading aligns itself with the standards set by our customers in the global market, providing professionalism and prompt service (FFT service) with 'responsibility,' 'communication,' and 'passion’.",
+      "2": "Furthermore, we prioritize customer satisfaction as our foremost value, and through transparent and fair corporate activities, as well as ESG management, we enhance the value of our company and build social trust."
+    }
+  },
+  "body": {
+    "title": "The work attitude of our employees towards customers",
+    "description": "We gain customer trust through a mindset of 'responsibility,' 'communication,' and 'passion'"
+  },
+  "footer": {
+    "1": {
+      "title": "Customer satisfaction",
+      "description": "We prioritize customer-centered judgment and action by promptly improving any inconvenience in our services to meet the evolving demands of the market"
+    },
+    "2": {
+      "title": "Discovering Value",
+      "description": "We consider the advancement of our customers as our own, striving to discover and propose the value they need ahead of time."
+    },
+    "3": {
+      "title": "Loyal trust",
+      "description": "We communicate truthfully with our customers, honor our commitments to them, and provide loyal quality services."
+    },
+    "4": {
+      "title": "Passionate communication",
+      "description": "We leverage our expertise to proactively provide innovative solutions to our customers, approaching our work with more questions and a passionate attitude"
+    },
+    "5": {
+      "title": "Legal compliance and respect",
+      "description": "All domestic and international business activities adhere to the respective country's laws and respect the customs of trade. We adhere to the principles of legal compliance, ethical conduct, and integrity."
+    }
+  }
+}
