@@ -36,7 +36,11 @@ const Header = () => {
   useEffect(() => {
     setMounted(true);
 
-    setLanguage(languageList.find((lang) => lang.toLowerCase() === languageParam.toLowerCase()) || languageList[0]);
+    setLanguage(languageList.find((lang) => {
+      if (languageParam) {
+        return lang.toLowerCase() === languageParam.toLowerCase();
+      }
+    }) || languageList[0]);
   }, []);
 
   const getLinks = (key: string) => {
