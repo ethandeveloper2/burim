@@ -118,7 +118,7 @@ const LanguageHome = ({ params }: {
               styles['first-row']
             ]}
             align={'center'}
-          >{'FFT 수,출입 솔루션을 제공하는 부림교역'}</Bold>
+          >{t('header')}</Bold>
 
           <div
             className={styles['second-row']}

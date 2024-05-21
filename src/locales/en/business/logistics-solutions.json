@@ -44,14 +44,14 @@
       "title": "Storage service",
       "description": {
         "part-1": {
-          "title": "보관",
+          "title": "Storage",
           "description": {
             "1" : {
               "first-line": "IoT automatic room",
               "second-line": ""
             },
             "2" : {
-              "first-line": "일반실",
+              "first-line": "Standard Room",
               "second-line": ""
             },
             "3" : {
