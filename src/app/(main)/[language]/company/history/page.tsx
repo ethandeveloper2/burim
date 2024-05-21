@@ -92,17 +92,17 @@ const HistoryPage = ({ params } : {
                 >
                   <Bold
                     classNames={[
-                      'text-[16px] lg:text-[32px]',
+                      'text-[14px] lg:text-[28px]',
                       'text-white',
                     ]}
                   >{historyObj[sectionKey].title}</Bold>
-                  <Bold
+                  <Regular
                     classNames={[
-                      'text-[15px] lg:text-[24px]',
+                      'text-[12px] lg:text-[24px]',
                       'text-white',
                     ]}
-                    align={'end'}
-                  >{historyObj[sectionKey].description}</Bold>
+                    align={'start'}
+                  >{historyObj[sectionKey].description}</Regular>
                 </div>
               </div>
               
@@ -117,12 +117,12 @@ const HistoryPage = ({ params } : {
                       className={styles['year-row']}
                       key={`year_group_${yearKey}`}
                     >
-                      <div
+                      {/* <div
                         className={styles.dot}
-                      />
+                      /> */}
                       <Medium
                         classNames={[
-                          'text-[24px] lg:text-[36px]',
+                          'text-[24px] lg:text-[32px]',
                         ]}
                       >{yearKey}</Medium>
                       <ul
