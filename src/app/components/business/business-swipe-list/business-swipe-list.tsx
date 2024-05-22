@@ -72,16 +72,18 @@ const BusinessSwipeList = ({
               )}
               <Bold
                 classNames={[
-                  'text-[16px] lg:text-[35px]',
+                  'text-[14px] lg:text-[20px]',
                   'text-white',
                 ]}
+                align={'center'}
               >{contentObject[key]['first-line']}</Bold>
               <Medium
                 classNames={[
-                  'text-[12px] lg:text-[24px]',
+                  'text-[12px] lg:text-[16px]',
                   'text-white',
                 ]}
-              >{contentObject[key]['second-line'] || ' '}</Medium>
+                align={'center'}
+              >{contentObject[key]['second-line']}</Medium>
             </div>
           </SwiperSlide>
         );
