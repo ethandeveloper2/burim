@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 
 import styles from './page.module.css';
 import { language } from '@Types/type';
-import bgImage from '@Public/images/company/values/001.png';
+import bgImage from '@Public/images/company/fft/001.png';
 import useTranslate from '@Hooks/useTranslate';
 import Medium from '@Components/common/typo/medium/medium';
 import CompanyPageTitle from '@Components/company/page-title/page-title';
@@ -48,7 +48,7 @@ const FftPage = ({ params } : {
                 >
                   <Medium
                     classNames={[
-                      'text-[16px] lg:text-[32px]',
+                      'text-[16px] lg:text-[24px]',
                       'text-white',
                     ]}
                   >{explainObject[key]}</Medium>

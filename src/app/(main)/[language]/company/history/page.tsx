@@ -51,7 +51,7 @@ const HistoryPage = ({ params } : {
                 >
                   <Medium
                     classNames={[
-                      'text-[16px] lg:text-[32px]',
+                      'text-[16px] lg:text-[24px]',
                       'text-white',
                     ]}
                   >{explainObj[key]}</Medium>

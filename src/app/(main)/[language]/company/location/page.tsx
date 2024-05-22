@@ -66,7 +66,7 @@ const LocationPage = ({ params } : {
                   >{infoKeys[0]}</Bold>
                   <Regular
                     classNames={[
-                      'text-[14px] lg:text-[24px]',
+                      'text-[14px] lg:text-[20px]',
                     ]}
                   >{infoObj[infoKeys[0]]}</Regular>
                 </div>
@@ -90,12 +90,12 @@ const LocationPage = ({ params } : {
                         >
                           <Regular
                             classNames={[
-                              'text-[16px] lg:text-[24px]',
+                              'text-[14px] lg:text-[20px]',
                             ]}
                           >{telInfoKey}</Regular>
                           <Regular
                             classNames={[
-                              'text-[14px] lg:text-[24px]',
+                              'text-[14px] lg:text-[20px]',
                             ]}
                           >{infoObj[infoKeys[1]][telInfoKey]}</Regular>
                         </div>

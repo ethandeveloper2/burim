@@ -50,7 +50,7 @@ const BusinessValuesPage = ({ params } : {
                 >
                   <Medium
                     classNames={[
-                      'text-[16px] lg:text-[32px]',
+                      'text-[16px] lg:text-[24px]',
                       'text-white',
                     ]}
                   >{explainObject[key]}</Medium>
@@ -77,13 +77,13 @@ const BusinessValuesPage = ({ params } : {
               >
                 <Bold
                   classNames={[
-                    'text-[20px] lg:text-[40px]',
+                    'text-[20px] lg:text-[32px]',
                   ]}
                   mb={8}
                 >{footerObject[key].title}</Bold>
                 <Medium
                   classNames={[
-                    'text-[14px] lg:text-[24px]',
+                    'text-[16px] lg:text-[20px]',
                   ]}
                 >{footerObject[key].description}</Medium>
                 <div

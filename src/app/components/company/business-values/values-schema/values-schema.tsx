@@ -31,14 +31,14 @@ const BurimValuesSchema = () => {
       >
         <Bold
           classNames={[
-            'text-[24px] lg:text-[40px]',
+            'text-[24px] lg:text-[32px]',
           ]}
           align={'center'}
           mb={greaterThanLarge ? 32 : 8}
         >{t('body.title')}</Bold>
         <Medium
           classNames={[
-            'text-[16px] lg:text-[24px]',
+            'text-[16px] lg:text-[20px]',
           ]}
           align={'center'}
           mb={greaterThanLarge ? 50 : 42}
