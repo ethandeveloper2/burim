@@ -27,6 +27,19 @@ const BusinessSwipeList = ({
     setMounted(true);
   }, []);
 
+  const handleHover = (idx: number) => {
+    setIsHover((prev) => {
+      const coypState = initailHover;
+      coypState[idx] = true;
+
+      return coypState;
+    });
+  }
+
+  const handleResetHover = () => {
+    setIsHover(initailHover);
+  }
+
   return (mounted && (
     <Swiper
       className={styles.container}
@@ -46,18 +59,10 @@ const BusinessSwipeList = ({
               fill
             />
             <div
-              className={styles['content-container']}
-              onMouseOver={() => {
-                setIsHover((prev) => {
-                  const coypState = initailHover;
-                  coypState[idx] = true;
-
-                  return coypState;
-                });
-              }}
-              onMouseOut={() => {
-                setIsHover(initailHover);
-              }}
+              className={`${styles['content-container']} ${ishover[idx] ? styles.hover : ''}`}
+              onTouchStart={() => handleHover(idx)}
+              onMouseOver={() => handleHover(idx)}
+              onMouseOut={handleResetHover}
             >
               {ishover[idx] && (
                 <div

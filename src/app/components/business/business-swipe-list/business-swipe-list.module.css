@@ -37,7 +37,7 @@
       }
     }
 
-    .content-container:hover {
+    .content-container.hover {
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, theme('colors.green.1') 100%);
     }
   }
