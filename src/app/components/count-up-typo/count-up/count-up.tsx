@@ -21,6 +21,9 @@ const CountUpTypo = ({
   const ref = useRef<HTMLDivElement>(null);
 
   const [mounted, setMounted] = useState(false);
+
+  // 1회 동작을 위한 flag
+  let count = 0;
   
   const { start } = useCountUp({
     ref: ref,
@@ -39,8 +42,9 @@ const CountUpTypo = ({
   }, [classNames]);
 
   const handleScroll = useCallback((entries: any) => {
-    if(entries[0].isIntersecting) {
+    if(!count && entries[0].isIntersecting) {
       start();
+      count = 1;
     }
   }, []);
   
