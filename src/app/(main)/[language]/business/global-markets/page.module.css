@@ -128,16 +128,24 @@
             .first-business-card {
               width: 100%;
               background-color: theme('colors.grey.50');
-              padding: 35px 16px;
+              min-height: 121px;
+              padding: 16px 8px;
+
+              @media (min-width: 1300px) {
+                min-height: 184px;
+                padding: 24px 16px;
+              }
 
               .pb-logo-wrapper {
                 position: relative;
-                width: 110px;
-                height: 39px;
+                width: 115px;
+                height: 43px;
+                margin-top: 20px;
 
                 @media (min-width: 1300px) {
-                  width: 180px;
-                  height: 60px;
+                  width: 185px;
+                  height: 68px;
+                  margin-top: 25px;
                 }
               }
             }

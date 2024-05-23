@@ -132,7 +132,7 @@ const GlobalMarketPage = ({ params } : {
           >
             <Bold
               classNames={[
-                'text-[26px] lg:text-[40px]',
+                'text-[20px] lg:text-[32px]',
               ]}
             >{t('body.section-2.title')}</Bold>
 
@@ -147,9 +147,8 @@ const GlobalMarketPage = ({ params } : {
                 >
                   <Bold
                     classNames={[
-                      'text-[16px] lg:text-[24px]',
+                      'text-[14px] lg:text-[20px]',
                     ]}
-                    mb={8}
                   >{t(`body.section-2.description.part-${1}.title`)}</Bold>
                   <div
                     className={styles['pb-logo-wrapper']}
@@ -185,7 +184,7 @@ const GlobalMarketPage = ({ params } : {
           >
             <Bold
               classNames={[
-                'text-[26px] lg:text-[40px]',
+                'text-[20px] lg:text-[32px]',
               ]}
             >{t('body.section-3.title')}</Bold>
             <div

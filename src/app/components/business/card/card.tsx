@@ -17,9 +17,8 @@ const BusinessCard = ({
     >
       <Bold
         classNames={[
-          'text-[16px] lg:text-[24px]',
+          'text-[14px] lg:text-[20px]',
         ]}
-        mb={8}
       >{title}</Bold>
       <div
         className={styles.description}
@@ -33,7 +32,7 @@ const BusinessCard = ({
         >{highlight}</Medium>
         <Bold
           classNames={[
-            'text-[16px] lg:text-[24px]',
+            'text-[14px] lg:text-[20px]',
           ]}
         >{highlightSuffix}</Bold>
       </div>

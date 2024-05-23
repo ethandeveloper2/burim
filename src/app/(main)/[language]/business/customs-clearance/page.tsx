@@ -131,7 +131,7 @@ const CustomsClearancePage = ({ params } : {
           >
             <Bold
               classNames={[
-                'text-[26px] lg:text-[40px]',
+                'text-[20px] lg:text-[32px]',
               ]}
             >{t('body.section-2.title')}</Bold>
 
@@ -161,7 +161,7 @@ const CustomsClearancePage = ({ params } : {
           >
             <Bold
               classNames={[
-                'text-[26px] lg:text-[40px]',
+                'text-[20px] lg:text-[32px]',
               ]}
             >{t('body.section-3.title')}</Bold>
             <div

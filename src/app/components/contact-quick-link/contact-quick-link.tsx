@@ -40,7 +40,7 @@ const ContactQuickLink = () => {
       >
         <Bold
           classNames={[
-            'text-[26px] lg:text-[32px]',
+            'text-[20px] lg:text-[32px]',
             'text-white',
           ]}
           align={'center'}
