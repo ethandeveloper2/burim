@@ -26,45 +26,75 @@
   z-index: 10;
   top: 0;
 
-  & .btn-wrapper {
+  & .body-wrapper {
+    height: 100%;
     max-width: 390px;
-    margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
-    padding-top: 32px;
-    padding-right: 20px;
-  }
-
-  .menus {
-    width: 100%;
-    max-width: 390px;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
-    padding: 25px 20px;
+    padding-top: 36px;
+    padding-bottom: 30px;
 
-    & .menu {
-      cursor: pointer;
-      margin-bottom: 8px;
-
-      & .main-menu {
-        width: 100%;
-        padding: 10px 0;
+    & .body-upward {
+      & .close-btn-wrapper {
+        max-width: 390px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
       }
-
-      & .sub-ul {
-        height: 0;
-        opacity: 0;
-        overflow: hidden;
-        transition: opacity 0.5s ease;
-
-        & .sub-li {
-          width: 100%;
-          padding: 14px 24px;
+    
+      & .menus {
+        width: 100%;
+        max-width: 390px;
+        margin: 0 auto;
+        padding: 35px 20px 25px;
+    
+        & .menu {
+          cursor: pointer;
+          margin-bottom: 8px;
+    
+          & .main-menu {
+            width: 100%;
+            padding: 10px 0;
+          }
+    
+          & .sub-ul {
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: opacity 0.5s ease;
+    
+            & .sub-li {
+              width: 100%;
+              padding: 14px 24px;
+            }
+          }
+    
+          & .sub-ul.show {
+            height: auto;
+            opacity: 1;
+          }
         }
       }
+    }
+    
+    & .language-btn-container {
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
 
-      & .sub-ul.show {
-        height: auto;
-        opacity: 1;
+      & .btn {
+        padding: 8px 24px;
+      }
+
+      & .slash {
+        height: 18px;
+        width: 1px;
+        background-color: theme('colors.grey.300');
+        transform: translateY(-2px);
       }
     }
   }
