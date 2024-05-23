@@ -33,7 +33,6 @@
         opacity: var(--first-opacity);
         transition: 1s;
       }
-
       .second-row {
         display: flex;
         flex-wrap: wrap;
@@ -169,22 +168,22 @@
               padding: 0 16px;
               
               & .count {
-                width: 55px;
+                width: 60px;
                 margin-right: 4px;
                 text-align: right;
 
                 @media (min-width: 1300px) {
-                  width: 140px;
+                  width: 145px;
                 }
               }
             }
           }
 
           & .summary-li:last-child .summary-first-line .count {
-            width: 80px;
+            width: 85px;
 
             @media (min-width: 1300px) {
-              width: 190px;
+              width: 195px;
             }
           }
 
