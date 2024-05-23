@@ -6,23 +6,17 @@ import Image from 'next/image';
 import styles from './accordion.module.css';
 import arrowUpIcon from '@Public/icons/arrow/arrow-up-green.svg';
 import arrowDownIcon from '@Public/icons/arrow/arrow-down-white.svg';
-import downloadIcon from '@Public/icons/download-white.svg';
 import Bold from '@Components/common/typo/bold/bold';
-import Regular from '@Components/common/typo/regular/regular';
 
 const BusinessAccordion = ({
   title,
   children,
-  number,
-  downloadBtn = false,
-  downloadBtnText = '',
+  indexText = '',
   initialOpen = false,
 }: {
   title: string;
   children: ReactNode;
-  number?: number;
-  downloadBtn?: boolean;
-  downloadBtnText?: string;
+  indexText?: string;
   initialOpen?: boolean;
 }) => {
   const [mounted, setMounted] = useState(false);
@@ -49,40 +43,20 @@ const BusinessAccordion = ({
         <div
           className={styles['title-container']}
         >
-          {number && (
+          {indexText && (
             <Bold
               classNames={[
-                'text-[24px] lg:text-[40px]',
+                'text-[16px] lg:text-[24px]',
                 isOpen ? 'text-white' : 'text-black',
               ]}
-            >{number}</Bold>
+            >{indexText}</Bold>
           )}
           <Bold
             classNames={[
-              'text-[20px] lg:text-[36px]',
+              'text-[14px] lg:text-[20px]',
               isOpen ? 'text-white' : 'text-black',
             ]}
           >{title}</Bold>
-
-          {downloadBtn && (
-            <button
-              className={styles['download-btn']}
-              type={'button'}
-            >
-              <Regular
-                classNames={[
-                  'text-[14px]',
-                  'text-white',
-                ]}
-              >{downloadBtnText}</Regular>
-              <Image
-                src={downloadIcon}
-                alt={''}
-                width={20}
-                height={20}
-              />
-            </button>
-          )}
         </div>
 
         {/* 오픈버튼 */}
@@ -100,6 +74,8 @@ const BusinessAccordion = ({
             className={styles.icon}
             src={isOpen ? arrowUpIcon : arrowDownIcon}
             alt={''}
+            width={28}
+            height={28}
           />
         </button>
       </section>

@@ -1,9 +1,9 @@
 'use client'
 
 import { useEffect } from 'react';
-
-import { language } from '@/app/types/type';
 import { useParams, useRouter } from 'next/navigation';
+
+import { language } from '@Types/type';
 
 const Home = () => {
   const { language: languageParam } = useParams<{ language: language }>(); 

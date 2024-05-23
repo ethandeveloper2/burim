@@ -42,10 +42,10 @@
     },
     "section-3": {
       "title": "At a glance",
+      "btn": "Download",
       "description": {
         "part-1": {
           "title": "Fresh category",
-          "btn": "Download",
           "description": {
             "1" : {
               "first-line": "Fruits ",
@@ -63,7 +63,6 @@
         },
         "part-2": {
           "title": "Processed food category",
-          "btn": "Download",
           "description": {
             "1" : {
               "first-line": "Instant meal",
@@ -89,7 +88,6 @@
         },
         "part-3": {
           "title": "Industrial goods",
-          "btn": "Download",
           "description": {
             "1" : {
               "first-line": "Beauty item",

@@ -4,14 +4,15 @@ import { Fragment } from 'react';
 import styles from './page.module.css';
 import firstImage from '@Public/images/business/market/001.png';
 import pbLogo from '@Public/logos/pb-logo.png';
+import useTranslate from '@Hooks/useTranslate';
+import { language } from '@Types/type';
 import ContactQuickLink from '@Components/contact-quick-link/contact-quick-link';
 import Regular from '@Components/common/typo/regular/regular';
 import Bold from '@Components/common/typo/bold/bold';
 import BusinessCard from '@Components/business/card/card';
 import GlobalBusinessScope from '@Components/business/business-scope/global-business-scope/global-business-scope';
 import TitleWithEnglish from '@Components/title-with-english/title-with-english';
-import useTranslate from '@Hooks/useTranslate';
-import { language } from '@Types/type';
+import MarketDownloadBtn from '@Components/business/market-download-btn/market-download-btn';
 
 const GlobalMarketPage = ({ params } : {
   params: {
@@ -182,11 +183,19 @@ const GlobalMarketPage = ({ params } : {
           <div
             className={styles.third}
           >
-            <Bold
-              classNames={[
-                'text-[20px] lg:text-[32px]',
-              ]}
-            >{t('body.section-3.title')}</Bold>
+            <div
+              className={styles['title-container']}
+            >
+              <Bold
+                classNames={[
+                  'text-[20px] lg:text-[32px]',
+                ]}
+              >{t('body.section-3.title')}</Bold>
+
+              {/* pdf 다운로드 버튼 */}
+              {/* <MarketDownloadBtn /> */}
+            </div>
+
             <div
               className={styles['ul-wrapper']}
             >

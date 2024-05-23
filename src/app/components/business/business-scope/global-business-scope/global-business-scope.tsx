@@ -25,10 +25,8 @@ const GlobalBusinessScope = () => {
       className={styles.container}
     >
       <BusinessAccordion
-        number={1}
+        indexText={'01'}
         title={t('body.section-3.description.part-1.title')}
-        downloadBtn
-        downloadBtnText={t('body.section-3.description.part-1.btn')}
         initialOpen
       >
         <BusinessSwipeList
@@ -37,10 +35,8 @@ const GlobalBusinessScope = () => {
         />
       </BusinessAccordion>
       <BusinessAccordion
-        number={2}
+        indexText={'02'}
         title={t('body.section-3.description.part-2.title')}
-        downloadBtn
-        downloadBtnText={t('body.section-3.description.part-1.btn')}
       >
         <BusinessSwipeList
           contentObject={JSON.parse(t('body.section-3.description.part-2.description'))}
@@ -48,10 +44,8 @@ const GlobalBusinessScope = () => {
         />
       </BusinessAccordion>
       <BusinessAccordion
-        number={3}
+        indexText={'03'}
         title={t('body.section-3.description.part-3.title')}
-        downloadBtn
-        downloadBtnText={t('body.section-3.description.part-1.btn')}
       >
         <BusinessSwipeList
           contentObject={JSON.parse(t('body.section-3.description.part-3.description'))}

@@ -25,7 +25,7 @@ const LogisticsBusinessScope = () => {
       className={styles.container}
     >
       <BusinessAccordion
-        number={1}
+        indexText={'01'}
         title={t('body.section-3.description.part-1.title')}
         initialOpen
       >
@@ -35,7 +35,7 @@ const LogisticsBusinessScope = () => {
         />
       </BusinessAccordion>
       <BusinessAccordion
-        number={2}
+        indexText={'02'}
         title={t('body.section-3.description.part-2.title')}
       >
         <BusinessSwipeList
