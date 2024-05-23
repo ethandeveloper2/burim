@@ -29,11 +29,6 @@ const RootLayout = ({
           src={'https://cdnjs.com/libraries/bodymovin'}
           type={'text/javascript'}
         />
-        {/* IFrame Player API 로드 */}
-        <script
-          defer
-          src={'https://www.youtube.com/iframe_api'}
-        />
       </head>
       <body>
         <Header />

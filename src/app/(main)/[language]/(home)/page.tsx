@@ -83,7 +83,7 @@ const LanguageHome = ({ params }: {
   });
 
   useEffect(() => {
-    if (window.VideoBackgrounds) {
+    if (mounted && window?.VideoBackgrounds) {
       new window.VideoBackgrounds('[data-vbg]');
     }
   }, [mounted]);
