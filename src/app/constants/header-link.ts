@@ -16,8 +16,9 @@ export const links: {
     '1': '/contact',
   },
   RECRUIT : {
-    '1': '/recruit',
-    '2': '/recruit/process',
+    // '1': '/recruit',
+    // '2': '/recruit/process',
+    '1': '/recruit/process',
   },
 }
 
