@@ -38,12 +38,11 @@
 
     .li {
       .map {
-        width: 350px;
+        width: 100%;
         height: 181.364px;
         margin-bottom: 16px;
 
         @media (min-width: 1300px) {
-          width: 1141.03px;
           height: 591.69px;
           margin-bottom: 24px;
         }
