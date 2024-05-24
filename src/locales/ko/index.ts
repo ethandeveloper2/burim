@@ -13,6 +13,8 @@ import contact from '@Locales/ko/contact/contact.json';
 import recruit from '@Locales/ko/recruit/recruit.json';
 import recruitProcess from '@Locales/ko/recruit/process.json';
 import experiencedSalse from '@Locales/ko/recruit/notices/experienced/sales.json';
+import terms from '@Locales/ko/policy/terms.json';
+import privacy from '@Locales/ko/policy/privacy.json';
 
 export default {
   header,
@@ -42,4 +44,8 @@ export default {
     },
   },
   contact,
+  policy: {
+    terms,
+    privacy,
+  },
 };
