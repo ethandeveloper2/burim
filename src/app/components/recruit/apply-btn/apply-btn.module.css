@@ -4,6 +4,7 @@
   left: 0;
   bottom: 12px;
   padding: 0 20px;
+  z-index: 5;
 
   @media (min-width: 1300px) {
     position: relative;
