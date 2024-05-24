@@ -13,6 +13,7 @@
 
     .image {
       z-index: -1;
+      object-fit: cover;
     }
 
     .content-container {
