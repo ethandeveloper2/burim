@@ -7,13 +7,17 @@ export const POST = async (req: Request) => {
   // SMTP 설정
   const transporter = nodemailer.createTransport({
     service: 'gmail',
+    // service: 'hiworks',
+    // host: 'smtps.hiworks.com',
+    // port: 465,
+    secure: true,
     auth: {
       user: process.env.NEXT_PUBLIC_EMAIL_AUTH_USER, // 메일 계정
       pass: process.env.NEXT_PUBLIC_EMAIL_AUTH_PASSWORD // 앱 비밀번호
     },
-    tls: {
-      rejectUnauthorized: false
-    }
+    // tls: {
+    //   rejectUnauthorized: false
+    // }
   });
 
   // 이메일 전송 함수
