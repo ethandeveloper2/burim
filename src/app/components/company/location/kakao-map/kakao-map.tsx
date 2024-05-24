@@ -23,11 +23,17 @@ const KakaoMap = ({
   }, []);
 
   useEffect(() => {
+    console.log('지도1')
+
     if (mounted) {
+      console.log('지도2')
+      
       // 카카오 지도 로드 후 지도 생성
       const kakao = window.kakao;
-  
+      
       if (kakao) {
+        console.log('지도3')
+
         kakao.maps.load(() => {
           // 지도 생성
           const map = new kakao.maps.Map(mapEl.current, {
