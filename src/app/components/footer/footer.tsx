@@ -49,12 +49,6 @@ const Footer = () => {
               styles['header-text'],
             ]}
           >{t(`company.middle.2`)}</Regular>
-          <Regular
-            classNames={[
-              'text-[14px]',
-              styles['header-text'],
-            ]}
-          >{t(`company.middle.3`)}</Regular>
         </div>
         <div
           className={styles.third}
@@ -71,12 +65,6 @@ const Footer = () => {
               styles['header-text'],
             ]}
           >{t(`company.right.2`)}</Regular>
-          <Regular
-            classNames={[
-              'text-[14px]',
-              styles['header-text'],
-            ]}
-          >{t(`company.right.3`)}</Regular>
         </div>
       </div>
 
@@ -102,7 +90,7 @@ const Footer = () => {
         </div>
         <Regular
           classNames={[
-            'text-[12px]',
+            'text-[14px]',
             styles.copyright,
             styles['footer-text'],
           ]}

@@ -1,19 +1,17 @@
 {
   "company": {
     "middle": {
-      "1": "대표  홍길동   ㅣ   사업자 등록 번호  123-4567-890",
-      "2": "서울특별시 가가동 나나로 111-2 8층",
-      "3": "통신 판매업 신고  제 2014-서울홍홍홍 0291호"
+      "1": "부산광역시 강서구 범방3로 30번길 12, Boo IoT자동화물류센터 5층 우편번호 46727",
+      "2": "사업자 등록 번호  602-81-28216"
     },
     "right": {
-      "1": "고객지원 111-2345",
-      "2": "이메일 help@gmail.com",
-      "3": "평일 09:00 - 17:00 토,일 공휴일 휴무"
+      "1": "대표번호 051-469-1222",
+      "2": "이메일 qna@burimtrade.com"
     }
   },
   "policy": {
     "terms": "이용약관",
     "privacy": "개인정보처리방침"
   },
-  "copyright": "Copyrightⓒ2023 Data nugget All rights reserved."
+  "copyright": "CopyrightⓒBurim Trade Co.,Ltd."
 }

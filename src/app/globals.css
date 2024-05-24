@@ -5,8 +5,8 @@
 :root {
   --header-height: 88px;
   --header-sm-height: 56px;
-  --footer-height: 330px;
-  --footer-sm-height: 391px;
+  --footer-height: 335px;
+  --footer-sm-height: 369px;
 }
 
 @layer utilities {

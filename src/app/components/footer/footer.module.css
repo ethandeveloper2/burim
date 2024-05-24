@@ -25,10 +25,10 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
-      padding-top: 60px;
+      padding-top: 106px;
       padding-left: 0;
       padding-right: 0;
-      padding-bottom: 101px;
+      padding-bottom: 59px;
     }
 
     .logo {
@@ -49,7 +49,7 @@
       margin-top: 40px;
 
       @media (min-width: 1300px) {
-        max-width: 1140px;
+        max-width: 459px;
         margin-top: 0;
       }
     }
@@ -58,7 +58,7 @@
       margin-top: 20px;
 
       @media (min-width: 1300px) {
-        max-width: 1140px;
+        max-width: 165px;
         margin-top: 0;
       }
     }
@@ -76,14 +76,13 @@
 
   .footer {
     padding-top: 20px;
-    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     @media (min-width: 1300px) {
       padding-top: 24px;
-      padding-bottom: 42px;
+      padding-bottom: 36px;
     }
 
     .link-wrapper {
@@ -94,7 +93,11 @@
 
       .link {
         color: theme('colors.grey.400');
-        font-size: 10px;
+        font-size: 12px;
+
+        @media (min-width: 1300px) {
+          font-size: 14px;
+        }
       }
     }
 
