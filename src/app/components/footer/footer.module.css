@@ -1,10 +1,12 @@
 .container {
   background-color: theme('colors.grey.50');
-  height: var(--footer-sm-height);
+  min-height: var(--footer-sm-height);
+  height: auto;
   border-top: 1px solid theme('colors.grey.200');
 
   @media (min-width: 1300px) {
-    height: var(--footer-height);
+    min-height: var(--footer-height);
+    height: auto;
   }
 
   .header {
@@ -58,7 +60,7 @@
       margin-top: 20px;
 
       @media (min-width: 1300px) {
-        max-width: 165px;
+        width: 175px;
         margin-top: 0;
       }
     }
