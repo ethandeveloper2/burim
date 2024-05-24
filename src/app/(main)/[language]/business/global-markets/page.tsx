@@ -193,7 +193,7 @@ const GlobalMarketPage = ({ params } : {
               >{t('body.section-3.title')}</Bold>
 
               {/* pdf 다운로드 버튼 */}
-              {/* <MarketDownloadBtn /> */}
+              <MarketDownloadBtn />
             </div>
 
             <div

@@ -12,8 +12,8 @@ import Regular from '@Components/common/typo/regular/regular';
 
 const MarketDownloadBtn = () => {
   const freshFileLinkEl = useRef<HTMLAnchorElement>(null);
-  const foodFileLinkEl = useRef<HTMLAnchorElement>(null);
-  const goodsFileLinkEl = useRef<HTMLAnchorElement>(null);
+  const pbFileLinkEl = useRef<HTMLAnchorElement>(null);
+  const processedFileLinkEl = useRef<HTMLAnchorElement>(null);
 
   const { language: languageParam } = useParams<{ language: language }>(); 
   const { t } = useTranslate('business.global-markets', languageParam);
@@ -26,8 +26,8 @@ const MarketDownloadBtn = () => {
 
   const downloadFiles = () => {
     freshFileLinkEl.current?.click();
-    foodFileLinkEl.current?.click();
-    goodsFileLinkEl.current?.click();
+    pbFileLinkEl.current?.click();
+    processedFileLinkEl.current?.click();
   }
 
   return (mounted && (
@@ -50,26 +50,25 @@ const MarketDownloadBtn = () => {
           height={20}
         />
       </button>
-
-      {/* 다운로드 파일 링크(숨김 처리) */}
-      {/* TODO: 다운로드 경로 변경, 파일명 변경(download 설정값), 언어 설정에 따라 다운로드되는 파일 분기 처리,  */}
+      
+      {/* 02 pb상품만 언어설정에 따라 파일 변경 */}
       <a
         ref={freshFileLinkEl}
         className={styles.files}
-        href={`/file/001.pdf`}
-        download={''}
+        href={`/file/01_burim_fresh_item.pdf`}
+        download
       />
       <a
-        ref={foodFileLinkEl}
+        ref={pbFileLinkEl}
         className={styles.files}
-        href={`/file/002.pdf`}
-        download={''}
+        href={`/file/02_burim_pb_${languageParam}.pdf`}
+        download
       />
       <a
-        ref={goodsFileLinkEl}
+        ref={processedFileLinkEl}
         className={styles.files}
-        href={`/file/003.pdf`}
-        download={''}
+        href={`/file/03_burim_processed_food.pdf`}
+        download
       />
     </>
   ));
