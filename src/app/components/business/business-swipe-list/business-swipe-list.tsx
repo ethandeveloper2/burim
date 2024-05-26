@@ -57,6 +57,7 @@ const BusinessSwipeList = ({
               src={`${fileSrc}/${key}.png`}
               alt={''}
               fill
+              sizes={'(max-width: 1299px) 140px, 274px'}
             />
             <div
               className={`${styles['content-container']} ${ishover[idx] ? styles.hover : ''}`}
@@ -72,6 +73,7 @@ const BusinessSwipeList = ({
                     src={`${fileSrc}/icons/${key}.svg`}
                     alt={''}
                     fill
+                    sizes={'(max-width: 1299px) 60px, 95px'}
                   />
                 </div>
               )}

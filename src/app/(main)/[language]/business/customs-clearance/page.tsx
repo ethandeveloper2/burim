@@ -66,6 +66,7 @@ const CustomsClearancePage = ({ params } : {
                 src={firstImage}
                 alt={''}
                 fill
+                sizes={'(max-width: 390px) 100vw, (max-width: 1299px) 390px, 1144px'}
               />
             </div>
 

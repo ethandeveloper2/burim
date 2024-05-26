@@ -68,6 +68,7 @@ const GlobalMarketPage = ({ params } : {
                 src={firstImage}
                 alt={''}
                 fill
+                sizes={'(max-width: 390px) 100vw, (max-width: 1299px) 390px, 1144px'}
               />
             </div>
 
@@ -158,6 +159,7 @@ const GlobalMarketPage = ({ params } : {
                       src={pbLogo}
                       alt={'pb brand logo'}
                       fill
+                      sizes={'(max-width: 1299px) 115px, 185px'}
                     />
                   </div>
                 </div>

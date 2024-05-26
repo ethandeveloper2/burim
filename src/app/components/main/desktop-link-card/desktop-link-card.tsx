@@ -47,6 +47,7 @@ const DesktopLinkCard = ({
         src={src}
         alt={''}
         fill
+        sizes={'40vw'}
       />
 
       {isClearance && isHover && (

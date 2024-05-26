@@ -165,6 +165,7 @@ const LanguageHome = ({ params }: {
             src={`/images/main/map-mobile.png`}
             alt={''}
             fill
+            sizes={'(max-width: 389px) 100vw, (max-width: 1299px) 390px'}
           />
         )}
 
