@@ -97,7 +97,7 @@ const LanguageHome = ({ params }: {
       >
         <div
           className={styles.video}
-          data-vbg={'videos/11856385-uhd_2160_3840_25fps-2.mp4'}
+          data-vbg={'videos/banner-video.mp4'}
         />
 
         <div
